@@ -6,7 +6,7 @@ char* welcome() {
 }
 
 int main() {
-    char *mystring = (char *)(malloc((1024) * sizeof(char)));
+    char *mystring = (char *)malloc((1024) * sizeof(char));
     scanf("%[^\n]", mystr);
     mystring = realloc(mystring, strlen(mystring) + 1);
     printf("%s", mystring);

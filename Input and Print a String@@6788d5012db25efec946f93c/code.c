@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <string.h>
-
-char* welcome() {
-    return "Welcome to Code Radar!";
-}
+#include <stdlib.h>
 
 int main() {
     char *mystring = (char *)malloc((1024) * sizeof(char));

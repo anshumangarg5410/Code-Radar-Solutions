@@ -7,7 +7,7 @@ int main() {
     scanf("%[^\n]", &mystring);
     mystring = realloc(mystring, strlen(mystring) + 1);
     char *token = strtok(mystring, " ");
-    printf("You entered: ")
+    printf("You entered: ");
     printf("%s and", token);
     strtok(NUMM, mystring);
     printf(" %s", token);

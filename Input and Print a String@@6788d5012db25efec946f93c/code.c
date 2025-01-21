@@ -4,7 +4,7 @@
 
 int main() {
     char *mystring = (char *)malloc((1024) * sizeof(char));
-    scanf("%[^\n]", mystr);
+    scanf("%[^\n]", mystring);
     mystring = realloc(mystring, strlen(mystring) + 1);
     printf("%s", mystring);
 

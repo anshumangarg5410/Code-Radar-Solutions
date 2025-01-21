@@ -9,7 +9,7 @@ int main() {
     char *token = strtok(mystring, " ");
     printf("You entered: ");
     printf("%s and", token);
-    strtok(NUMM, mystring);
+    strtok(NULL, mystring);
     printf(" %s", token);
     return 0;
 }

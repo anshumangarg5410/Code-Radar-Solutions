@@ -1,4 +1,6 @@
+
 #include <stdio.h>
+
 
 int main() {
     int a, b;
@@ -8,10 +10,10 @@ int main() {
     if (operator == '+'){
         printf("%d", a + b);
     }
-    else if(opeartor == '-'){'
+    else if(operator == '-'){
         printf("%d", a - b);
     }
-    else if(opeartor == '*'){
+    else if(operator == '*'){
         printf("%d", a*b);
     }
     else if(operator == '/'){

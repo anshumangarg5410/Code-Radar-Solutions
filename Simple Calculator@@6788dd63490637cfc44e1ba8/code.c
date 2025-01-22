@@ -4,6 +4,13 @@ int main(){
     int a, b;
     char op;
     scanf("%d %d %c", &a, &b, &op);
+    if (b == 0){
+        printf("%d", b);
+        return 0;
+    }
+    else {
+        printf("%d", b);
+    }
     int result = a;
     if (op == '+'){
         printf("%d", a + b);
@@ -15,14 +22,7 @@ int main(){
         printf("%d", a*b);
     }
     else if(op == '/'){
-        int result = a/b;
-        if (b == 0){
-            printf("%d", b);
-        }
-        else {
-            printf("%d", b);
-        }
-
+        printf("%d", a/b);
     }
     return 0;
 }

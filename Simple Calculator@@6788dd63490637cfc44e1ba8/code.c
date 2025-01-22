@@ -1,27 +1,21 @@
 #include <stdio.h>
 
-int main() {
+int main(){
     int a, b;
-    char operator;
-
-    // Added a space before %c to consume newline or whitespace
-    scanf("%d %d %c", &a, &b, &operator);
-
-    if (operator == '+') {
+    char op;
+    scanf("%d %d %c", &a, &b, &op);
+    int result = a;
+    if (op == '+'){
         printf("%d", a + b);
-    } else if (operator == '-') {
-        printf("%d", a - b);
-    } else if (operator == '*') {
-        printf("%d", a * b);
-    } else if (operator == '/') {
-        if (b != 0) { // Check for division by zero
-            printf("%d", a / b);
-        } else {
-            printf("0");
-        }
-    } else {
-        printf("Invalid operator.");
     }
-
+    else if(op == '-'){
+        printf("%d", a - b);
+    }
+    else if(op == '*'){
+        printf("%d", a*b);
+    }
+    else if(op == '/'){
+        printf("%d", a/b);
+    }
     return 0;
 }

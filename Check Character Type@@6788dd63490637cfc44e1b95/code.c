@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<ctype.h>
 
 int main() {
     char vowels[10] = {'a', 'e', 'i', 'o', 'u', 'A', 'I', 'E', 'O', 'U'};

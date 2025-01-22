@@ -15,7 +15,13 @@ int main(){
         printf("%d", a*b);
     }
     else if(op == '/'){
-        printf("%d", a/b);
+        int result = a/b;
+        if (b == 0){
+            printf('0');
+        }
+        else (
+            printf("%d", a/b);
+        )
     }
     return 0;
 }

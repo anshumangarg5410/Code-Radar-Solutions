@@ -19,9 +19,10 @@ int main(){
         if (b == 0){
             printf("%d", b);
         }
-        else (
-            printf("%d", a/b);
-        )
+        else {
+            printf("%d", b);
+        }
+
     }
     return 0;
 }

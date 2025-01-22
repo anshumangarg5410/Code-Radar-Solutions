@@ -19,6 +19,9 @@ int main() {
     else if (a == 1){
         printf("Not Prime");
     }
+    else if (a== 0){
+        printf("Not Prime");
+    }
     else if (!flag){
         printf("Not Prime");
     }

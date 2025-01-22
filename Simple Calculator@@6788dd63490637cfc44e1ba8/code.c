@@ -3,10 +3,10 @@
 int main(){
     int a,b;
     char c;
-    if (char == "+") printf("%d", a + b);
-    else if (char == "-") printf("%d", a - b);
-    else if (char == "*") printf("%d", a * b);
-    else if (char == "/") {
+    if (c == "+") printf("%d", a + b);
+    else if (c == "-") printf("%d", a - b);
+    else if (c == "*") printf("%d", a * b);
+    else if (c == "/") {
         if (b == 0){
             printf("error");
         }
@@ -17,6 +17,7 @@ int main(){
             printf("%d", a / b);
         }
     }
+    else printf("error");
     return 0;
 }
 

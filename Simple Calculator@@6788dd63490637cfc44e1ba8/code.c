@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 int main(){
-    float a, b;
+    int a, b;
     char op;
-    scanf("%f %f %c", &a, &b, &op);
+    scanf("%d %d %c", &a, &b, &op);
+    printf("%d %d", a, b);
     int result = a;
     if (op == '+'){
         printf("%d", a + b);

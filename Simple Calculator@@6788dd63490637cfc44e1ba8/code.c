@@ -17,7 +17,7 @@ int main(){
     else if(op == '/'){
         int result = a/b;
         if (b == 0){
-            printf('0');
+            printf("%d", b);
         }
         else (
             printf("%d", a/b);

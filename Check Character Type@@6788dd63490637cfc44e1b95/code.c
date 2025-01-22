@@ -13,7 +13,7 @@ int main() {
         for (int i =0; i<10; i++){
             if (integ == vowels[i]){
                 printf("Vowel");
-                contidion = 1;
+                condition = 1;
                 return 0;
             }
             

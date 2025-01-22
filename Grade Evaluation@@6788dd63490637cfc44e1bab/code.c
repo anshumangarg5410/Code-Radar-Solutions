@@ -8,6 +8,6 @@ int main() {
     else if (a == 'C') printf("Average");
     else if (a == 'D') printf("Below Average");
     else if (a == 'F') printf("Fail");
-    else printf("Invalid Grade");
+    else printf("Invalid grade");
     return 0;
 }

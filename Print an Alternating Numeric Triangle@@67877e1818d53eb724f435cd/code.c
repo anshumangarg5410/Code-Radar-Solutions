@@ -5,10 +5,11 @@ int main() {
     scanf("%d", &a);
     int count;
     for (int i=0; i<a; i++){
+        if (i%2 == 0) count = 1;
+        else count = 0;
         for (int j =0; j<=i; j++){
-            if (j%2 == 0 && i%2 == 0) count = 1;
-            else count = 0;
             printf("%d ", count);
+            count = !count;
         }
         printf("\n");
     }

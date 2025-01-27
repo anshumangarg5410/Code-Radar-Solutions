@@ -36,11 +36,6 @@ int main() {
             printf("%d %d\n", myarray[i], size);
         }
     }
-    for (int e = 0; e < a; e++) {
-        if (seen[e] != 0) {
-            printf("%d ", seen[e]);
-        }
-    }
     free(myarray);
     free(seen);
     return 0;

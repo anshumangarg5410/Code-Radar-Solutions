@@ -1,4 +1,3 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -8,7 +7,7 @@ int main() {
     int *myarray = (int *)malloc(a * sizeof(int));
     int *seen = (int *)malloc(a * sizeof(int));
     for (int i = 0; i < a; i++) {
-        seen[i] = -1;
+        seen[i] = -99999999;
     }
     for (int i = 0; i < a; i++) {
         scanf("%d", &myarray[i]);
@@ -24,7 +23,7 @@ int main() {
         }
         if (!condition) {
             for (int w = 0; w < a; w++) {
-                if (seen[w] == -1) { 
+                if (seen[w] == -99999999) { 
                     seen[w] = myarray[i];
                     break;
                 }
@@ -34,6 +33,11 @@ int main() {
                 if (myarray[i] == myarray[j]) size++;
             }
             printf("%d %d\n", myarray[i], size);
+        }
+    }
+    for (int e = 0; e < a; e++) {
+        if (seen[e] != 0) {
+            printf("%d ", seen[e]);
         }
     }
     free(myarray);

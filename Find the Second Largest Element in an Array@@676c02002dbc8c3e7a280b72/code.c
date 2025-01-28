@@ -30,7 +30,7 @@ int main(){
     int secondlarg = max_ele(myarray, a);
     int condition= 0;
     for (int i =0; i<a; i++){
-        if (myarray[i] != 0){
+        if (myarray[i] == 0){
             condition = 0;
         }
         else {

@@ -1,39 +1,43 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h> // for INT_MIN
 
-int max_ele(int myarray[], int a) {
-    int maxx = INT_MIN; // safer initialization
-    for(int i = 0; i < a; i++) {
-        if (myarray[i] > maxx) { // strictly greater for max value
+#include<stdio.h>
+#include<stdlib.h>
+#include<limits.h>
+
+int max_ele(int myarray[],int a){
+    int maxx = INT_MIN;
+    for(int i =0; i<a; i++){
+        if (myarray[i] >= maxx){
             maxx = myarray[i];
         }
     }
     return maxx;
 }
 
-int main() {
+
+int main(){
     int a;
     scanf("%d", &a);
-    int *myarray = (int *)malloc(a * sizeof(int));
-    
-    for (int i = 0; i < a; i++) {
+    int *myarray = (int *)malloc((a)*(sizeof(int)));
+    for (int i =0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
-    
     int maxele = max_ele(myarray, a);
-    
-    // Set the maximum element(s) to 0
-    for (int i = 0; i < a; i++) {
-        if (myarray[i] == maxele) {
+    for(int i=0; i<a; i++){
+        if(myarray[i] == maxele){
             myarray[i] = 0;
         }
     }
-    
-    // Find the second largest element
     int secondlarg = max_ele(myarray, a);
-    printf("%d", secondlarg);
-    
-    free(myarray); // Don't forget to free the allocated memory
-    return 0;
+    int condition= 0;
+    for int(i =0; i<a; i++){
+        if (myarray[i] != 0){
+            condition = 0;
+        }
+        else {
+            condition = 1;
+            break;
+        }
+    }
+    if (condition == 1) printf("%d", secondlarg);
+    else printf("%d", -1);
 }

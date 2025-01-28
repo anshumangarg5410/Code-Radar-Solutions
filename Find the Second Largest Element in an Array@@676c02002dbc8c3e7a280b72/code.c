@@ -39,5 +39,5 @@ int main(){
         }
     }
     if (condition == 1) printf("%d", secondlarg);
-    else printf("%d", -1);
+    else printf(-1);
 }

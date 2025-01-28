@@ -1,8 +1,10 @@
+
 #include<stdio.h>
 #include<stdlib.h>
+#include<limits.h>
 
 int max_ele(int myarray[],int a){
-    int maxx = -999999;
+    int maxx = INT_MIN;
     for(int i =0; i<a; i++){
         if (myarray[i] >= maxx){
             maxx = myarray[i];
@@ -23,11 +25,8 @@ int main(){
     for(int i=0; i<a; i++){
         if(myarray[i] == maxele){
             myarray[i] = 0;
-
         }
     }
     int secondlarg = max_ele(myarray, a);
     printf("%d", secondlarg);
 }
-
-

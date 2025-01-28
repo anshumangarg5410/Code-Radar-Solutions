@@ -23,6 +23,7 @@ int main(){
     for(int i=0; i<a; i++){
         if(myarray[i] == maxele){
             myarray[i] = 0;
+            break;
         }
     }
     int secondlarg = max_ele(myarray, a);

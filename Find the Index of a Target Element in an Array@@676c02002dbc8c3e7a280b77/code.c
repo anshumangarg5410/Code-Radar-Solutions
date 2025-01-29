@@ -13,7 +13,7 @@ int main() {
     int result = -1;
     for (int j =0; j<a; j++){
         if (myarray[j] == target){
-            result = i;
+            result = j;
         }
     }
     printf("%d", result);

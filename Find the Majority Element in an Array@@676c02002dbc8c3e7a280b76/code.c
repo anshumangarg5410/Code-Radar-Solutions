@@ -1,38 +1,41 @@
-
 #include<stdio.h>
 #include<stdlib.h>
 
 int main(){
     int a;
     scanf("%d", &a);
-    int *myarray = (int *)malloc((a)*(sizeof(int)));
+    int *myarray = (int *)malloc((a) * sizeof(int));
+    int *countaray = (int *)malloc((a) * sizeof(int));
+    int maxcount = 0;
+    int maxele = 0;
+    int specnt;
     for (int i =0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
-    int maxele = max_ele(myarray, a);
-    for(int i=0; i<a; i++){
-        if(myarray[i] == maxele){
-            myarray[i] = 0;
-        }
-    }
-    int secondlarg = max_ele(myarray, a);
-    int condition= 1;
-    for (int j=0; j<a; j++){
-        printf("%d", myarray[j]);
-    }
     for (int i =0; i<a; i++){
-        if (myarray[i] == 0){
-            condition = 0;
+        countaray[i] = 1;
+    }
+    for (int i = 0; i<a; i++){
+        specnt = 0;
+        for (int j =0; j<a; j++){
+            if (myarray[i] == myarray[j]) specnt++;
         }
-        else {
-            condition = 1;
-            break;
+        countaray[i] = specnt;
+        if (specnt > maxcount) {
+            maxcount = specnt;
+            maxele = myarray[i]; //make it this independeny
         }
     }
-    for (int j = 0; j<a; j++){
-        printf("%d", myarray[j]);
+    // for(int i=0; i<a; i++){
+    //     printf("%d", countaray[i]);
+    // }
+    int repcnt = 0;
+    for (int i =0; i<a; i++){
+        if (countaray[i] == maxcount){
+            repcnt++;
+        }
+    
     }
-    printf("condition : %d;  ", condition);
-    if (condition == 1) printf("%d", secondlarg);
+    if (repcnt ==  maxcount) printf("%d", maxele);
     else printf("%d", -1);
 }

@@ -14,6 +14,7 @@ int main() {
     for (int j =0; j<a; j++){
         if (myarray[j] == target){
             result = j;
+            break;
         }
     }
     printf("%d", result);

@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<stdlib.h>
 
@@ -23,7 +22,7 @@ int main(){
         }
     }
     for(int i =0; i<a; i++){
-        printf("%d", newarray[i]);
+        printf("%d ", newarray[i]);
     }
     free(myarray);
     free(newarray);

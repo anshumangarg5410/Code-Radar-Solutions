@@ -1,15 +1,13 @@
-#include<iostream>
-#include<vector>
-using namespace std;
+#include<stdio.h>
+#include<stdlib.h>
 int main(){
     int a;
-    cout << "Enter the number of elements in your array: "; cin >> a; cout << endl;
-    vector<int>myvector;
+    scanf("%d", &a);
+    int *myvector = malloc((a) * sizeof(int));
     for(int i =0; i<a; i++){
-        int temp; cin >> temp;
-        myvector.push_back(temp);
+        scanf("%d", &myvector[i]);
     }
-    vector<int>freqvector = {0,0};
+    int freqvector[2] = {0,0};
     for(int i =0; i<a; i++){
         int count = 1;
         for (int j =i+1; j<a; j++){
@@ -22,5 +20,5 @@ int main(){
         freqvector[1] = count;
         }
     }
-    cout << freqvector[0];
+    printf("%d", freqvector[0]);
 }

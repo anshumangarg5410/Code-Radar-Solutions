@@ -1,7 +1,7 @@
 #include <stdio.h>
+#include<stdlib.h>
 
-
-int maxele(myarray){
+int maxele(int myarray[], int a){
     int max;
     max = myarray[0];
     for (int i =0; i<a; i++){
@@ -23,7 +23,7 @@ int main() {
         if (i == a-1) finall[i] = -1;
         else {
             vector[i] = 0;
-            finall[i] = maxele(myarray);
+            finall[i] = maxele(vector, a);
         }
 
     }

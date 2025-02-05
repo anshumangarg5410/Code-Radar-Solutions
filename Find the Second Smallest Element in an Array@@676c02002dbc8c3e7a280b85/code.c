@@ -2,8 +2,8 @@
 #include<stdlib.h>
 
 int main() {
-    int a;
-    scanf("%d", &a);
+    int n;
+    scanf("%d", &n);
     int *vector = malloc((n) * sizeof(int));
     for(int i =0; i<a; i++){
         scanf("%d", &vector[i]);

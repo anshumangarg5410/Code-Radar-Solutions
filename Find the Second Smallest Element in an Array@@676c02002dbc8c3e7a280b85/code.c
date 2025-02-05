@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlin.h>
 
 int main() {
     int a;

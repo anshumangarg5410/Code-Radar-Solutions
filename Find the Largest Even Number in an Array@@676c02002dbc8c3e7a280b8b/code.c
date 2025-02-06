@@ -10,7 +10,7 @@ int main() {
     }
     int maxx = -1;
     for (int i =0; i<a; i++){
-        if (vector[i] > maxx and vector[i] %2 == 0) {
+        if (vector[i] > maxx && vector[i] %2 == 0) {
             maxx = vector[i];
         }
     }

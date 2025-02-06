@@ -3,7 +3,7 @@
 int main() {
     int a, k;
     scanf("%d %d", &a, &k);
-    int *vector = malloc("%d", &vector[i]);
+    int *vector = malloc((a) * sizeof(int));
     for (int i =0; i<a; i++){
         scanf("%d", &vector[i]);
     }

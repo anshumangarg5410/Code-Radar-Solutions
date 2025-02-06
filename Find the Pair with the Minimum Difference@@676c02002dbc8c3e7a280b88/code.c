@@ -8,7 +8,7 @@ int main() {
     if (a == 1) return -1;
     int *vector = malloc((a) * sizeof(int));
     for(int i =0; i<a; i++){
-        scanf("%d", vector[i])l
+        scanf("%d", vector[i]);
     }
     int minn = INT_MAX;
     for(int i =0; i<a-1; i++){

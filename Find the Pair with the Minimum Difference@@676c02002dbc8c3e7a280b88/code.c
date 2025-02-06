@@ -15,8 +15,8 @@ int main() {
     }
     int ele1, ele2;
     int minn = INT_MAX;
-    for(int i =a-1; i>0; i--){
-        for (int j=a-1; j>0; j--){
+    for(int i =0; i<a-1; i++){
+        for (int j=0; j<a; j++){
             if (abs(vector[i] - vector[j]) < minn && i!=j) {
                 minn = abs(vector[i] - vector[j]);
                 ele1 = vector[i];

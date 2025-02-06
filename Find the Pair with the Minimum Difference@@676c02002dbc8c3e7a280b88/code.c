@@ -5,7 +5,10 @@
 int main() {
     int a;
     scanf("%d", &a);
-    if (a == 1) return -1;
+    if (a == 1) {
+        printf("-1");
+        return 0;
+    }
     int *vector = malloc((a) * sizeof(int));
     for(int i =0; i<a; i++){
         scanf("%d", &vector[i]);

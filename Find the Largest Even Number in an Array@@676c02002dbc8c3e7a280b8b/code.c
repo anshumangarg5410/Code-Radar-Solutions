@@ -7,10 +7,10 @@ int main() {
     for (int i =0; i<a; i++){
         scanf("%d", &vector[i]);
     }
-    int maxx = 0;
+    int maxx = -1;
     for (int i =0; i<a; i++){
         if (vector[i] > maxx and vector[i] %2 == 0) {
-            max = vector[i];
+            maxx = vector[i];
         }
     }
     printf("%d", maxx);

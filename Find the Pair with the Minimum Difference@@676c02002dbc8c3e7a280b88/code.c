@@ -19,8 +19,8 @@ int main() {
     for(int i =0; i<a-1; i++){
         for (int j=0; j<a; j++){
             if (abs(vector[i] - vector[j]) < minn && i!=j) {
-                minn = abs(vector[i] - vector[j]);
                 if (ele1 > vector[i] && ele2 > vector[j]){               
+                    minn = abs(vector[i] - vector[j]);
                     ele1 = vector[i];
                     ele2 = vector[j];
                 }

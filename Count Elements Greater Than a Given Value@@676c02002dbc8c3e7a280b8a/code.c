@@ -10,7 +10,7 @@ int main() {
     }
     int count = 0;
     for (int j =0; j<a; j++){
-        if (vector[i]>k) count ++;
+        if (vector[j]>k) count ++;
     }
     printf("%d", count);
     return 0;

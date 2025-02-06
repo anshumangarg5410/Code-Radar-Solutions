@@ -24,7 +24,7 @@ int main() {
             };
         }
     }
-    if (ele 1 > ele 2) printf("%d %d", ele2, ele1);
+    if (ele1 > ele2) printf("%d %d", ele2, ele1);
     else printf("%d %d", ele1, ele2);
     return 0;
 }

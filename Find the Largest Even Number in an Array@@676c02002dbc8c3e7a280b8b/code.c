@@ -15,7 +15,7 @@ int main() {
             maxx = vector[i];
         }
     }
-    if (maxx == INT_MIN) printf(-1);
+    if (maxx == INT_MIN) printf("%d", -1);
     else printf("%d", maxx);
     return 0;
 }

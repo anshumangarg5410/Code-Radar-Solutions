@@ -13,7 +13,7 @@ int main() {
     for(int i =0; i<a; i++){
         scanf("%d", &vector[i]);
     }
-    int ele1 = INT_MKN;
+    int ele1 = INT_MIN;
     int ele2 = INT_MIN;
     int minn = INT_MAX;
     for(int i =0; i<a-1; i++){

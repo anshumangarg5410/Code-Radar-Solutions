@@ -16,6 +16,6 @@ int main() {
             if (abs(vector[i] - vector[j] < minn)) minn = abs(vector[i] - vector[j]);
         }
     }
-    
+    printf("%d", minn);
     return 0;
 }

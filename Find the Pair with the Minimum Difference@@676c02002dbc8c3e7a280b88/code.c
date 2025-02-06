@@ -13,8 +13,8 @@ int main() {
     for(int i =0; i<a; i++){
         scanf("%d", &vector[i]);
     }
-    int ele1 = INT_MIN;
-    int ele2 = INT_MIN;
+    int ele1 = INT_MAX;
+    int ele2 = INT_MAX;
     int minn = INT_MAX;
     for(int i =0; i<a-1; i++){
         for (int j=0; j<a; j++){

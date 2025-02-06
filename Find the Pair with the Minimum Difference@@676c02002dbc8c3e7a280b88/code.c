@@ -21,6 +21,6 @@ int main() {
             };
         }
     }
-    printf("%d %d", ele1, ele2);
+    printf("%d %d", ele2, ele1);
     return 0;
 }

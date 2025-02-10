@@ -8,7 +8,7 @@ int main() {
         scanf("%d", myvec[i]);
     }
     for(int i =0; i<a; i++){
-        int smum = 0;
+        int summ = 0;
         for(int j = 0; j<i; j++){
             summ+= myvec[j];
         }

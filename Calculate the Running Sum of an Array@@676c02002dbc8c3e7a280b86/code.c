@@ -5,7 +5,7 @@ int main() {
     scanf("%d", &a);
     int *myarray = malloc((a) * sizeof(int));
     for(int i =0; i<a; i++){
-        scanf("%d", myvec[i]);
+        scanf("%d", &myvec[i]);
     }
     for(int i =0; i<a; i++){
         int summ = 0;

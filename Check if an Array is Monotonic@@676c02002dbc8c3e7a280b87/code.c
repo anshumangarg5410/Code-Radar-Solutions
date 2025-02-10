@@ -13,7 +13,7 @@ int main() {
         if(myvec[i] >= myvec[i+1]) flag1++;
     }
     for(int i =0; i<a;i++){
-        if(myvec[i] =< myvec[i+1]) flag2++;
+        if(myvec[i] <= myvec[i+1]) flag2++;
     }
     if (flag1 == a-1 || flag2 == a-1) {
         printf("YES");

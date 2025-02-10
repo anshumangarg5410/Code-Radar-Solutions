@@ -4,7 +4,7 @@
 int main() {
     int a;
     scanf("%d", &a);
-    int *myvec = malloc((n) * sizeof(int));
+    int *myvec = malloc((a) * sizeof(int));
     for(int i =0; i<a; i++){
         scanf("%d", &myvec[i]);
     }

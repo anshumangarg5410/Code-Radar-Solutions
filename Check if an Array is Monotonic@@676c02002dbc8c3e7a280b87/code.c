@@ -19,7 +19,7 @@ int main() {
     }
     for(int i =0; i<a-1;i++){
         if(myvec[i] == myvec[i+1]) {flag2++; flag1++;
-        printf("flag2 upd at %d and %d\n", myvec[i], myvec[i+1]);}
+        printf("flag2&1 upd at %d and %d\n", myvec[i], myvec[i+1]);}
     }
     printf("flag 1 = %d and flag 2= %d\n", flag1, flag2);
     if (flag1 == a-1 || flag2 == a-1) {

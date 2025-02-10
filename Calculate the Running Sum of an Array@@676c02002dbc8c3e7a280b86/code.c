@@ -8,11 +8,11 @@ int main() {
         scanf("%d", myvec[i]);
     }
     for(int i =0; i<a; i++){
-        int sum = 0;
+        int smum = 0;
         for(int j = 0; j<i; j++){
-            sum+= myvec[j];
+            summ+= myvec[j];
         }
-        printf("%d ", sum);
+        printf("%d ", summ);
     }
     return 0;
 }

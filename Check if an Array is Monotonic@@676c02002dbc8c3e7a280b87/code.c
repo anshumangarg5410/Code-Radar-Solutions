@@ -8,22 +8,8 @@ int main() {
     for (int i =0; i<a; i++){
         scanf("%d", &myvec[i]);
     }
-    int flag1 = 0; int flag2 = 0;
-    for(int i =0; i<a;i++){
-        if(myvec[i] >= myvec[i+1]) {flag1++;
-        printf("flag1 upd at %d and %d\n", myvec[i], myvec[i+1]);}
+    for(int i =0; i<a; i++){
+        printf("%d ELEMENT= %d\n", i, myvec[i]);
     }
-    for(int i =0; i<a;i++){
-        if(myvec[i] <= myvec[i+1]) {flag2++;
-        printf("flag2 upd at %d and %d\n", myvec[i], myvec[i+1]);}
-    }
-    printf("flag 1 = %d and flag 2= %d\n", flag1, flag2);
-    if (flag1 == a-1 || flag2 == a-1) {
-        printf("YES");
-        return 0;
-    }
-    else {
-        printf("NO");
-        return 0;
-    }
+
 }

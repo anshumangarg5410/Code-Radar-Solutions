@@ -12,6 +12,7 @@ int main() {
         for (int j =0;j<a;j++){
             if (myvec[i] == myvec[j] && i!=j){
                 printf("%d", myvec[i]);
+                break;
             }
         }
     }

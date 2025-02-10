@@ -10,7 +10,7 @@ int main() {
     }
     for(int i =0; i<a; i++){
         int summ = 0;
-        for(int j = 0; j<i; j++){
+        for(int j = 0; j<=i; j++){
             summ+= myvec[j];
         }
         printf("%d ", summ);

@@ -10,10 +10,12 @@ int main() {
     }
     int flag1 = 0; int flag2 = 0;
     for(int i =0; i<a;i++){
-        if(myvec[i] >= myvec[i+1]) flag1++;
+        if(myvec[i] >= myvec[i+1]) {flag1++;
+        printf("flag1 upd at %d and %d", myvec[i], myvec[i+1])}
     }
     for(int i =0; i<a;i++){
-        if(myvec[i] <= myvec[i+1]) flag2++;
+        if(myvec[i] <= myvec[i+1]) {flag2++;
+        printf("flag2 upd at %d and %d", myvec[i], myvec[i+1])}
     }
     printf("flag 1 = %d and flag 2= %d", flag1, flag2);
     if (flag1 == a-1 || flag2 == a-1) {

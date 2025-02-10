@@ -8,23 +8,19 @@ int main() {
     for (int i =0; i<a; i++){
         scanf("%d", &myvec[i]);
     }
-    int dec = 0;int big = 0; int equal=0;
-    for(int i =0;i<a;i++){
-        if (myvec[i] > myvec[i+1]) dec ++;
-        else if (myvec[i] < myvec[i+1]) {
-            big++;
-        }
-        else if (myvec [i] == myvec[i+1]){
-            equal++;
-        }
+    int flag1 = 0; int flag2 = 0;
+    for(int i =0; i<a;i++){
+        if(myvec[i] >= myvec[i+1]) flag1++;
     }
-    if (dec == a-1 || big == a-1 || equal == a-1) {
+    for(int i =0; i<a;i++){
+        if(myvec[i] =< myvec[i+1]) flag2++;
+    }
+    if (flag1 == a-1 || flag2 == a-1) {
         printf("YES");
         return 0;
-    } 
+    }
     else {
         printf("NO");
         return 0;
     }
-    return 0;
 }

@@ -5,19 +5,19 @@ int main() {
     int a;
     scanf("%d", &a);
     int *myvec = malloc((a) *sizeof(int));
-    for (int i =0; i<a-1; i++){
+    for (int i =0; i<a; i++){
         scanf("%d", &myvec[i]);
     }
     int flag1 = 0; int flag2 = 0;
-    for(int i =0; i<a-1;i++){
+    for(int i =0; i<a;i++){
         if(myvec[i] > myvec[i+1]) {flag1++;
         printf("flag1 upd at %d and %d\n", myvec[i], myvec[i+1]);}
     }
-    for(int i =0; i<a-1;i++){
+    for(int i =0; i<a;i++){
         if(myvec[i] < myvec[i+1]) {flag2++;
         printf("flag2 upd at %d and %d\n", myvec[i], myvec[i+1]);}
     }
-    for(int i =0; i<a-1;i++){
+    for(int i =0; i<a;i++){
         if(myvec[i] == myvec[i+1]) {flag2++; flag1++;
         printf("flag2&1 upd at %d and %d\n", myvec[i], myvec[i+1]);}
     }

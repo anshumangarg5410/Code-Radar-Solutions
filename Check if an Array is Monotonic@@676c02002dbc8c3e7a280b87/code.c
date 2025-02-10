@@ -15,6 +15,7 @@ int main() {
     for(int i =0; i<a;i++){
         if(myvec[i] <= myvec[i+1]) flag2++;
     }
+    printf("flag 1 = %d and flag 2= %d", flag1, flag2);
     if (flag1 == a-1 || flag2 == a-1) {
         printf("YES");
         return 0;

@@ -6,7 +6,7 @@ int main(){
     scanf("%d", &a);
     int *myvec = malloc((a) * sizeof(int));
     for(int i =0;i<a;i++){
-        scanf("%d", myvec[i]);
+        scanf("%d", &myvec[i]);
     }
     int i = 0; int flag = 0;
     for(int j =i+1; j<a+1; j++){

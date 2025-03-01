@@ -25,7 +25,7 @@ int main(){
         else {
             j++;
             i = 0;
-            printf("in else")
+            printf("in else");
         }
 
     }

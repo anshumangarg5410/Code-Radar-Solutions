@@ -16,7 +16,7 @@ int max_ele(int myarray[],int a){
 
 int main(){
     int a;
-    if (a == 2) {
+    if (a == 1) {
         printf("-1");
         return 0;
     }

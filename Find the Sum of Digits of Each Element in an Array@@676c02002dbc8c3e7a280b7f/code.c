@@ -2,6 +2,7 @@
 #include<stdlib.h>
 
 int digitsum(int num){
+    if (num < 10) return num;
     int numcopy = num; int sum = 0;
     while (numcopy > 0){
         sum += numcopy % 10;

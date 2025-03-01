@@ -16,11 +16,11 @@ int max_ele(int myarray[],int a){
 
 int main(){
     int a;
-    if (a == 1) {
+    scanf("%d", &a);
+    if (a == 1 || a == 0) {
         printf("-1");
         return 0;
     }
-    scanf("%d", &a);
     int *myarray = (int *)malloc((a)*(sizeof(int)));
     for (int i =0; i<a; i++){
         scanf("%d", &myarray[i]);

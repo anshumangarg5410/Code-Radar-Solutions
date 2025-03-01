@@ -8,10 +8,10 @@ int main(){
     for (int i =0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
-    int count = 1; int j =0; int tarele = myarray[j] + 1; int finalcount = 0;
+    int count = 1; int j =0; int tarele = myarray[j]; int finalcount = 0;
     for (int i =0; i<a; i++){
         if (j == a) break;
-        if (tarele == myarray[i]){
+        if (tarele + 1 == myarray[i] && i!=j){
             printf("in main if ");
             count++;
             tarele++;

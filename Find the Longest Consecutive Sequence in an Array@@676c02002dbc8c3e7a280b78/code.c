@@ -26,8 +26,9 @@ int main(){
             if (i == a-1) {
                 i = 0;
                 j++;
+                tarele = myarray[j];
             }
-            
+
         }
 
     }

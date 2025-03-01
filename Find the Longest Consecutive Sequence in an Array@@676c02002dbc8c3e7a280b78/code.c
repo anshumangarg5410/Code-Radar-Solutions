@@ -12,7 +12,7 @@ int main(){
     for (int i =0; i<a; i++){
         if (j == a) break;
         if (tarele== myarray[i] && i!=j){
-            // printf("in main if ");
+            printf("tarele = myarray[%d]\n", i);
             count++;
             tarele++;
             if (count > finalcount) finalcount = count;
@@ -20,10 +20,13 @@ int main(){
                 i = 0;
                 j++;
             }
+            printf("\n%d %d %d &d\n", count, finalcount, j, tarele);
 
         }
         else {
+            printf("tarele != myarray[%d]\n", i);
             if (i == a-1) {
+                printf("i = a-1\n");
                 i = 0;
                 j++;
                 tarele = myarray[j];

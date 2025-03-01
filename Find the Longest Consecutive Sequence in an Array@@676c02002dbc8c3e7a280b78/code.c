@@ -12,18 +12,17 @@ int main(){
     for (int i =0; i<a; i++){
         if (j == a) break;
         if (tarele== myarray[i] && i!=j){
-            printf("tarele = myarray[%d] and tarele = %d, if statement (j = %d)\n", i, tarele, j);
+            printf("IN MAIN IF: Targele: %d, i: %d, j: %d\n", tarele, i, j);
             count++;
             tarele++;
             if (count > finalcount) finalcount = count;
             if (i == a-1) {
                 i = 0;
             }
-            printf("\n count : %d , finalfount = %d , j = %d tarele = %d if statement \n", count, finalcount, j, tarele);
 
         }
         else {
-            printf("tarele != myarray[%d], else statement j = %d and tarele = %d\n", i, j, tarele);
+            printf("Else state: tarele: %d, i: %d, j: %d\n", tarele, i, j);
             if (i == a-1) {
                 printf("i = a-1\n");
                 i = 0;

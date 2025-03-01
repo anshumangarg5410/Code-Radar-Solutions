@@ -14,7 +14,7 @@ int main(){
         if (myarray[i] == myarray[j]){
             counttemp++; 
         }
-        if (i == a-1 && j != a-1) {
+        if (i == a-1 && j != a) {
             if (counttemp > countfinal) {
                 countfinal = counttemp;
                 target = j;

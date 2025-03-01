@@ -25,7 +25,7 @@ int main(){
                 printf("i = a\n");
                 i = 0;
                 j++;
-                count = 0;
+                count = 1;
                 tarele = myarray[j]+1;
             }
 

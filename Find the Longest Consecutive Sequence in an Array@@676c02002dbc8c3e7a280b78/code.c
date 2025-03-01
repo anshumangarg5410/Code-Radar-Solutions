@@ -20,7 +20,7 @@ int main(){
                 i = 0;
                 j++;
             }
-            printf("\n%d %d %d &d\n", count, finalcount, j, tarele);
+            printf("\n%d %d %d %d\n", count, finalcount, j, tarele);
 
         }
         else {

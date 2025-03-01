@@ -24,7 +24,7 @@ int main(){
 
         }
         else {
-            printf("tarele != myarray[%d], else statement j = \n", i, j);
+            printf("tarele != myarray[%d], else statement j = %d\n", i, j);
             if (i == a-1) {
                 printf("i = a-1\n");
                 i = 0;

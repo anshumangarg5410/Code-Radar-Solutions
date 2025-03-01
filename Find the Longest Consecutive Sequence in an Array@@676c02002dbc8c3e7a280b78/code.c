@@ -20,7 +20,7 @@ int main(){
                 i = 0;
                 j++;
             }
-            printf("\n%d %d %d %d\n if 2 statement", count, finalcount, j, tarele);
+            printf("\n%d %d %d %d if statement\n", count, finalcount, j, tarele);
 
         }
         else {

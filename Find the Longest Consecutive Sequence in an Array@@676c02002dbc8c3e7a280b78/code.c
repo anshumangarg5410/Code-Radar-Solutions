@@ -18,13 +18,14 @@ int main(){
             if (count > finalcount) finalcount = count;
             if (i == a) {
                 i = 0;
+                printf("IN MAIN; i = a at j = %d", j);
             }
 
         }
         else {
             printf("Else state: tarele: %d, i: %d, j: %d\n", tarele, i, j);
             if (i == a) {
-                printf("i = a-1\n");
+                printf("i = a\n");
                 i = 0;
                 j++;
                 count = 0;

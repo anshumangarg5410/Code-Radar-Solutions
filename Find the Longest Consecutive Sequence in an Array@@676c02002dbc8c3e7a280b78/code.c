@@ -16,14 +16,14 @@ int main(){
             count++;
             tarele++;
             if (count > finalcount) finalcount = count;
-            i=0;
+            i=-1;
 
         }
         else {
             printf("Else state: tarele: %d, i: %d, j: %d\n", tarele, i, j);
             if (i == a) {
                 printf("i = a\n");
-                i = 0;
+                i = -1;
                 j++;
                 count = 1;
                 tarele = myarray[j]+1;

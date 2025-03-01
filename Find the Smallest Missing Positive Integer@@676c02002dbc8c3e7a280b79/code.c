@@ -30,16 +30,14 @@ int main(){
         if (j == a) break;
         condition = 0;
         if (myarray[i] != minele(myarray, a) + j)  {
-            condition++;
+            condition++; printf("condition updated at i: %d j: %d\n", i, j);
         }
-
         if (i == a-1){
-            if (condition == 4) element = myarray[j];
+            if (condition == 4) element = myarray[j]; printf("stopped at i: %d j: %d and condition: \n", i, j, condition);
             condition = 0;
             i = -1;
             j++;
         }
     }
     printf("%d", element);
-
 }

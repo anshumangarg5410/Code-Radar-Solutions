@@ -23,5 +23,19 @@ int main(){
         }
         j++;
     }
+    print("%d", counttemp);
+    // j=0; counttemp = 0;
+    // for (int i =0; i<a; i++){
+    //     if (myarray[i == myarray[j]]{
+    //         counttemp++;
+    //     })
+    //     if (i == a-1 && j != a-1){
+    //         if (counttemp == countfinal){
+    //             printf("-1");
+    //             return 0;
+    //         }
+
+    //     }
+    // }
     printf("%d", myarray[target]);
 }

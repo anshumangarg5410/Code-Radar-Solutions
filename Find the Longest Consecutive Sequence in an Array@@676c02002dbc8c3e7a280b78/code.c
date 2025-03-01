@@ -18,8 +18,9 @@ int main(){
             if (count > finalcount) finalcount = count;
             if (i == a-1) {
                 i = 0;
+                j++;
             }
-            printf("count : %d , finalfount = %d , j = %d tarele = %d if statement \n\n", count, finalcount, j, tarele);
+            printf("\n count : %d , finalfount = %d , j = %d tarele = %d if statement \n", count, finalcount, j, tarele);
 
         }
         else {

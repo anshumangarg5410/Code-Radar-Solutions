@@ -23,7 +23,7 @@ int main(){
         }
         j++;
     }
-    printf("%d", counttemp);
+    printf("c %d c; ", counttemp);
     // j=0; counttemp = 0;
     // for (int i =0; i<a; i++){
     //     if (myarray[i == myarray[j]]{

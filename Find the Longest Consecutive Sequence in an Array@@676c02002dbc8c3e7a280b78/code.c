@@ -21,7 +21,6 @@ int main(){
                 i = 0;
                 printf("IN MAIN; i = a at j = %d", j);
             }
-            i=0;
 
         }
         else {

@@ -19,7 +19,7 @@ int main(){
             if (i == a-1) {
                 i = 0;
             }
-            printf("\n count : %d , finalfount = %d , j = %d tarele = %d if statement \n", count, finalcount, j, tarele);
+            printf("count : %d , finalfount = %d , j = %d tarele = %d if statement \n\n", count, finalcount, j, tarele);
 
         }
         else {

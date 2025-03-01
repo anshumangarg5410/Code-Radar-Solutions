@@ -25,7 +25,7 @@ int main(){
     for (int i =0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
-    int j = 1; , int element;
+    int j = 1; int element;
     for (int i =0; i<=a; i++){
         int condition = 0
         if (myarray[i] == minele(myarray, a) + j)  {

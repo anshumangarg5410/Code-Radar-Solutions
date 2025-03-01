@@ -20,7 +20,7 @@ int main(){
                 i = 0;
                 j++;
             }
-            printf("\n% count : d , finalfount = %d , j = %d tarele = %d if statement \n", count, finalcount, j, tarele);
+            printf("\n count : d , finalfount = %d , j = %d tarele = %d if statement \n", count, finalcount, j, tarele);
 
         }
         else {

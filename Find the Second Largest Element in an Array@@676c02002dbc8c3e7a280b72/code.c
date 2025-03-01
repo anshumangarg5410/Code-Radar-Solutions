@@ -25,7 +25,10 @@ int main(){
     int status = 0;
     for(int i=0; i<a; i++){
         if(myarray[i] == maxele){
-            if (status == 1) return -1;
+            if (status == 1) {
+                printf("-1");
+                return 0;
+            };
             myarray[i] = INT_MIN;
             status = 1;
         }

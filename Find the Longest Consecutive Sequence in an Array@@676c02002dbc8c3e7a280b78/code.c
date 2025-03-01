@@ -16,10 +16,6 @@ int main(){
             count++;
             tarele++;
             if (count > finalcount) finalcount = count;
-            if (i == a-1) {
-                i = 0;
-                printf("IN MAIN; i = a at j = %d", j);
-            }
             i=0;
 
         }

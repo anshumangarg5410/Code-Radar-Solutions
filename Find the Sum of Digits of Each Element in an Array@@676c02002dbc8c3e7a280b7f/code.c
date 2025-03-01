@@ -4,6 +4,7 @@
 int digitsum(int num){
     if (num < 10) return num;
     int numcopy = num; int sum = 0;
+    if (num < 0) numcopy = -numcopy;
     while (numcopy > 0){
         sum += numcopy % 10;
         numcopy = numcopy/10;

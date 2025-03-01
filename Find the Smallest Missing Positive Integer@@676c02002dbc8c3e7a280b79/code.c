@@ -10,7 +10,7 @@ int maxele(int myarray[], int size){
     return maxx;
 }
 
-int mixele(int myarray[], int size){
+int minele(int myarray[], int size){
     int minn = INT_MAX;
     for (int i =0; i<size; i++){
         if (myarray[i] < minn) minn = myarray[i];

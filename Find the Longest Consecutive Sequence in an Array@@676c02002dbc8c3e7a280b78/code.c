@@ -29,7 +29,7 @@ int main(){
                 printf("i = a-1\n");
                 i = 0;
                 j++;
-                tarele = myarray[j];
+                tarele = myarray[j]+1;
             }
 
         }

@@ -27,7 +27,7 @@ int main(){
         }
 
     }
-    if (finalcount != 0) printf("%d", finalcount);
+    if (finalcount > 0) printf("%d", finalcount);
     else printf("-1");
 
 }

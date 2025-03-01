@@ -24,7 +24,6 @@ int main(){
         else {
             j++;
             i = 0;
-            tarele = myarray[j] + 1;
         }
 
     }

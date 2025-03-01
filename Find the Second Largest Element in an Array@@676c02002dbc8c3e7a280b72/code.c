@@ -22,10 +22,12 @@ int main(){
         scanf("%d", &myarray[i]);
     }
     int maxele = max_ele(myarray, a);
+    int status = 0;
     for(int i=0; i<a; i++){
         if(myarray[i] == maxele){
+            if (status == 1) return -1;
             myarray[i] = INT_MIN;
-            break;
+            status = 1;
         }
     }
     int secondlarg = max_ele(myarray, a);

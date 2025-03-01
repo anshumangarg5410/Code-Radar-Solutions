@@ -19,7 +19,6 @@ int main(){
                 countfinal = counttemp;
                 target = j;
             }
-            printf("c %d c; ", counttemp);
             counttemp = 0;
             i = 0;
             j++;
@@ -27,18 +26,20 @@ int main(){
         
     }
 
-    // j=0; counttemp = 0;
-    // for (int i =0; i<a; i++){
-    //     if (myarray[i == myarray[j]]{
-    //         counttemp++;
-    //     })
-    //     if (i == a-1 && j != a-1){
-    //         if (counttemp == countfinal){
-    //             printf("-1");
-    //             return 0;
-    //         }
-
-    //     }
-    // }
+    j=0; counttemp = 0;
+    for (int i =0; i<a; i++){
+        if (myarray[i == myarray[j]]{
+            counttemp++;
+        })
+        if (i == a-1 && j != a){
+            if (counttemp == countfinal && j != target){
+                printf("-1");
+                return 0;
+            }
+            counttemp = 0;
+            i = 0;
+            j++;
+        }
+    }
     printf("%d", myarray[target]);
 }

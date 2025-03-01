@@ -12,7 +12,7 @@ int main(){
     for (int i =0; i<=a; i++){
         if (j == a) break;
         if (tarele== myarray[i] && i!=j){
-            printf("IN MAIN IF: Targele: %d, i: %d, j: %d\n", tarele, i, j);
+            printf("IN MAIN IF: Targele: %d, i: %d, j: %d, count: \n", tarele, i, j, count);
             count++;
             tarele++;
             if (count > finalcount) finalcount = count;

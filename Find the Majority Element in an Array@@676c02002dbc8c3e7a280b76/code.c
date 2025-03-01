@@ -28,7 +28,7 @@ int main(){
 
     j=0; counttemp = 0;
     for (int i =0; i<a; i++){
-        if (myarray[i == myarray[j]]{
+        if (myarray[i] == myarray[j]{
             counttemp++;
         })
         if (i == a-1 && j != a){

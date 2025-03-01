@@ -23,9 +23,11 @@ int main(){
 
         }
         else {
-            j++;
-            i = 0;
-            printf("in else");
+            if (i == a-1) {
+                i = 0;
+                j++;
+            }
+            
         }
 
     }

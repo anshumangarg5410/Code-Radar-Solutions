@@ -28,7 +28,6 @@ int main(){
     int j = 1; int element; int condition = 0;
     for (int i =0; i<=a; i++){
         if (j == a) break;
-        condition = 0;
         if (myarray[i] != minele(myarray, a) + j)  {
             condition++; printf("condition updated at i: %d j: %d\n", i, j);
         }

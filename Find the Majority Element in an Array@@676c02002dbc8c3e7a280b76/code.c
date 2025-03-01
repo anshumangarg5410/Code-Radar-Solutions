@@ -22,7 +22,7 @@ int main(){
             i = 0;
         }
         j++;
-        printf("c %d c; ", countfinal);
+        printf("c %d c; ", counttemp);
     }
 
     // j=0; counttemp = 0;

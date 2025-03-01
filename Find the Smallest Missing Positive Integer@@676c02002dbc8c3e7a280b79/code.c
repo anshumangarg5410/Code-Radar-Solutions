@@ -32,7 +32,7 @@ int main(){
             condition++; printf("condition updated at i: %d j: %d\n", i, j);
         }
         if (i == a-1){
-            if (condition == a-1) element = myarray[j]; printf("stopped at i: %d j: %d and condition: %d\n", i, j, condition);
+            if (condition == a) element = myarray[j]; printf("stopped at i: %d j: %d and condition: %d\n", i, j, condition);
             condition = 0;
             i = -1;
             j++;

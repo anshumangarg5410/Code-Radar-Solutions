@@ -27,11 +27,11 @@ int main(){
     }
     int j = 1; int element;
     for (int i =0; i<=a; i++){
-        int condition = 0
+        int condition = 0;
         if (myarray[i] == minele(myarray, a) + j)  {
             condition = 1;
         }
-        if (!condition) element = myarray[minele(myarray, a) + j] 
+        if (!condition) element = myarray[minele(myarray, a) + j];
         j++;
         if (i == a-1) i = -1;
         if (j == a-1) break;

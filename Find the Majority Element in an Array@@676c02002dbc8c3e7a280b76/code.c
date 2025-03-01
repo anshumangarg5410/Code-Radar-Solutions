@@ -24,7 +24,6 @@ int main(){
             j++;
             printf("c %d c; ", counttemp);
         }
-        j
         
     }
 

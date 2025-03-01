@@ -18,7 +18,6 @@ int main(){
             if (count > finalcount) finalcount = count;
             if (i == a-1) {
                 i = 0;
-                j++;
             }
             printf("\n count : %d , finalfount = %d , j = %d tarele = %d if statement \n", count, finalcount, j, tarele);
 
@@ -29,6 +28,7 @@ int main(){
                 printf("i = a-1\n");
                 i = 0;
                 j++;
+                count = 0;
                 tarele = myarray[j]+1;
             }
 

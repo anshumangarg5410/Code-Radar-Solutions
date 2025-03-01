@@ -19,6 +19,6 @@ int main(){
         scanf("%d", &myarray[i]);
     }
     for (int i =0; i<a; i++){
-        printf("%d ", digitsum(i));
+        printf("%d ", digitsum(myarray[i]));
     }
 }

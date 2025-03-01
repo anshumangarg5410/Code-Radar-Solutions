@@ -22,7 +22,7 @@ int main(){
         else {
             // printf("Else state: tarele: %d, i: %d, j: %d\n", tarele, i, j);
             if (i == a) {
-                printf("i = a\n");
+                // printf("i = a\n");
                 i = -1;
                 j++;
                 count = 1;

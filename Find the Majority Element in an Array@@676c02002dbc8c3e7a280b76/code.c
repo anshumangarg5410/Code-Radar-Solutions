@@ -19,10 +19,10 @@ int main(){
                 countfinal = counttemp;
                 target = j;
             }
+            printf("c %d c; ", counttemp);
             counttemp = 0;
             i = 0;
             j++;
-            printf("c %d c; ", counttemp);
         }
         
     }

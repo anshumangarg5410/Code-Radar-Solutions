@@ -31,11 +31,11 @@ int main(){
         if (myarray[i] == minele(myarray, a) + j)  {
             condition = 1;
         }
-        if (!condition) element = myarray[minele(myarray, a) + j];
         j++;
         if (i == a-1) i = -1;
         if (j == a-1) break;
     }
+    if (!condition) element = myarray[minele(myarray, a) + j];
     printf("%d", element);
 
 }

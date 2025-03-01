@@ -25,18 +25,20 @@ int main(){
     for (int i =0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
-    int j = 1; int element; int condition;
+    int j = 1; int element; int condition = 0;
     for (int i =0; i<=a; i++){
         condition = 0;
-        if (myarray[i] == minele(myarray, a) + j)  {
-            condition = 1;
+        if (myarray[i] != minele(myarray, a) + j)  {
+            condition++;
         }
-        if (i != a-1 && j != a) {
-            i = i-1;
+
+        if (i == a-1){
+            if (condition == 4) element = myarray[j];
+            condition = 0;
+            i = -1;
             j++;
         }
     }
-    if (!condition) element = myarray[minele(myarray, a) + j];
     printf("%d", element);
 
 }

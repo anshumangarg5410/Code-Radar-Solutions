@@ -11,7 +11,7 @@ int main(){
     int j =0;
     int counttemp = 0; int target = 0; int countfinal = 0;
     for (int i =0; i<a; i++){
-        if (myarray[i] == myarray[j] && i!=j){
+        if (myarray[i] == myarray[j]){
             counttemp++; 
         }
         if (i == a-1 && j != a-1) {
@@ -19,10 +19,13 @@ int main(){
                 countfinal = counttemp;
                 target = j;
             }
+            counttemp = 0;
             i = 0;
+            j++;
+            printf("c %d c; ", counttemp);
         }
-        j++;
-        printf("c %d c; ", counttemp);
+        j
+        
     }
 
     // j=0; counttemp = 0;

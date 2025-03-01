@@ -12,14 +12,16 @@ int main(){
     for (int i =0; i<=a; i++){
         if (j == a) break;
         if (tarele== myarray[i] && i!=j){
+
             printf("IN MAIN IF: Targele: %d, i: %d, j: %d\n", tarele, i, j);
             count++;
             tarele++;
             if (count > finalcount) finalcount = count;
-            if (i == a) {
+            if (i == a-1) {
                 i = 0;
                 printf("IN MAIN; i = a at j = %d", j);
             }
+            i=0;
 
         }
         else {
@@ -27,10 +29,9 @@ int main(){
             if (i == a) {
                 printf("i = a\n");
                 i = 0;
-                j++;
-                count = 0;
                 tarele = myarray[j]+1;
             }
+
 
         }
 

@@ -2,10 +2,9 @@
 #include<stdlib.h>
 
 int palindrome(int num){
-    int numcpy = num;
-    int reverse = 0;
+    int numcpy = num; int reverse = 0;
     while (numcpy > 0){
-        sum = sum*10 + numcpy%10;
+        reverse = reverse*10 + numcpy%10;
         numcpy = numcpy/10;
     }
     if (numcpy == num) return 1;

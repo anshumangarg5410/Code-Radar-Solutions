@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<stdilb.h>
+#include<stdlib.h>
 
 int sumchecker(int a, int b, int target){
     if (a+b == target) return 1;
@@ -26,6 +26,6 @@ int main(){
         }
         
     }
-    
+
 
 }

@@ -10,10 +10,10 @@ int main(){
     }
     int median = 0;
     if (a & 1) {
-        median = myarray[(i+1)/2];
+        median = myarray[(a+1)/2];
     }
     else {
-        median = (myarray[n/2] + myarray[n/2 + 1])/2;
+        median = (myarray[a/2] + myarray[a/2 + 1])/2;
     }
     printf("%d", median);
 }

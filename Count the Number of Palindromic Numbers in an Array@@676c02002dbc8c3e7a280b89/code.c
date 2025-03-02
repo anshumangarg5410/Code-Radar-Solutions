@@ -24,6 +24,6 @@ int main(){
     for (int i =0; i<a; i++){
         if (palindrome(i)) {sum++; printf("%d\n", i);}
     }
-    printf("%d", sum);
+    printf("-%d-", sum);
 
 }

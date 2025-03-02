@@ -18,13 +18,14 @@ int main(){
     for(int i =0;i <a; i++){
         scanf("%d", &myarray[i]);
     }
+    int condition = 0;
     int smallestele = minfunc(myarray, a);
     for(int i =0; i<a; i++){
-        if (myarray[i] == smallestele) {myarray[i] = INT_MAX; printf("yes, changed");}
+        if (myarray[i] == smallestele) {myarray[i] = INT_MAX; condition++;}
     }
     printf("%d\n", smallestele);
     int secondlar = minfunc(myarray, a);
-    if (smallestele == secondlar) {
+    if (condition > 1) {
         printf("-1");
         return -1;
     }

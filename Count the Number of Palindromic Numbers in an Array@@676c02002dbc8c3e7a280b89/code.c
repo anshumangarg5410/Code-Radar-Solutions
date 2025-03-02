@@ -23,8 +23,8 @@ int main(){
     }
     int sum = 0;
     for (int i =0; i<a; i++){
-        if (palindrome(i)) {sum++; printf("%d as of %d\n", i, palindrome(i));}
+        sum++; 
+        printf("%d as of %d\n", i, palindrome(i));
     }
-    printf("-%d-", sum);
 
 }

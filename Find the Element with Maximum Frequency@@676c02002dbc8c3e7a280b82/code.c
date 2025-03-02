@@ -13,14 +13,14 @@ int main(){
     for (int i =0; i<=a; i++){
         if (myarray[j] == myarray[i]) count ++;
         if (i == a-1) {
-            printf("j: %d; i: %d; count: %d; element: %d\n", j, i, count, ele);
+            // printf("j: %d; i: %d; count: %d; element: %d\n", j, i, count, ele);
             if (count > maxcount) {
                 maxcount = count;
                 ele = myarray[j];
                 count = 0;
             }
             else if (count == maxcount) {
-                printf("IN EQUAL CONDITION\n");
+                // printf("IN EQUAL CONDITION\n");
                 if (ele > myarray[j]) ele = myarray[j];
                 count = 0;
             }

@@ -23,12 +23,13 @@ int main(){
         if (myarray[i] == smallestele) {myarray[i] = INT_MAX; printf("yes, changed");}
     }
     printf("%d\n", smallestele);
-    if (smallestele == minfunc(myarray, a)) {
+    int secondlar = minfunc(myarray, a);
+    if (smallestele == secondlar) {
         printf("-1");
         return -1;
     }
     else {
-        printf("%d", minfunc(myarray, a));
+        printf("%d", secondlar);
         return 1;
     }
 

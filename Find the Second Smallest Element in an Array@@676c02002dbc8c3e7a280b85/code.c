@@ -4,7 +4,7 @@
 
 int maxfunc(int ar[], int size){
     int max = INT_MIN;
-    for(int i =0; i<a; i++){
+    for(int i =0; i<size; i++){
         if (ar[i] > max) max = ar[i];
     }
     return max;

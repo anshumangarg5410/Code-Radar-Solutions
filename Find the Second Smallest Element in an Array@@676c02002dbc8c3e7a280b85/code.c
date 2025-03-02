@@ -14,7 +14,7 @@ int main(){
     int a;
     scanf("%d", &a);
     int *myarray = malloc(a * sizeof(int));
-    for(int i =0;i <a, i++){
+    for(int i =0;i <a; i++){
         scanf("%d", &myarray[i]);
     }
     for(int i =0; i<a; i++){

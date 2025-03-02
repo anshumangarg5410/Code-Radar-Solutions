@@ -10,7 +10,7 @@ int palindrome(int num){
         numcpy = numcpy/10;
     }
     printf("%d, %d", reverse, num);
-    if (numcpy == num) return 1;
+    if (reverse == num) return 1;
     else return 0;
 }
 
@@ -23,7 +23,7 @@ int main(){
     }
     int sum = 0;
     for (int i =0; i<a; i++){
-        if (palindrome(i)) {sum++; printf("%d as of %d\n", i, palindrome(i));}
+        if (palindrome(myarray[i])) sum++;
     }
     printf("-%d-", sum);
 

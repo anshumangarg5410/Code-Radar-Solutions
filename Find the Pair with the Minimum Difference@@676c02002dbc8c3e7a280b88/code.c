@@ -10,13 +10,13 @@ int main(){
         scanf("%d", &myarray[i]);
     }
     int diff = INT_MAX; int ele1; int ele2; int j = 0;
-    for(int i =j+1; i<=a; i++){
+    for(int i =0; i<=a; i++){
         printf("i: %d; j: %d\n", i, j);
-        if ((abs(myarray[j] - myarray[i]) < diff)) {
+        if ((abs(myarray[j] - myarray[i]) < diff) && i != j) {
             ele1 = myarray[j]; ele2 = myarray[i]; diff = abs(myarray[j] - myarray[i]);
         }
         if (i = a-1) {
-            i = j;
+            i = -1;
             j++;
         }
         if (j == a-1) break;

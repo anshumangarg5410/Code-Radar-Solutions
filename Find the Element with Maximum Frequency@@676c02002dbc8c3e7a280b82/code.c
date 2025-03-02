@@ -20,6 +20,7 @@ int main(){
                 count = 0;
             }
             else if (count == maxcount) {
+                printf("IN EQUAL CONDITION\n");
                 if (ele > myarray[j]) ele = myarray[j];
                 count = 0;
             }

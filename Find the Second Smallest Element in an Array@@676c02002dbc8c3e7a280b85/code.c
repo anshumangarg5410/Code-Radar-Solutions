@@ -24,7 +24,7 @@ int main(){
         if (myarray[i] == smallestele) {myarray[i] = INT_MAX; condition++;}
     }
     int secondlar = minfunc(myarray, a);
-    if (condition > 1) {
+    if (condition == a-1) {
         printf("-1");
         return -1;
     }

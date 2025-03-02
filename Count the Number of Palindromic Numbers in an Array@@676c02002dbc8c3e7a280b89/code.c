@@ -22,7 +22,7 @@ int main(){
     }
     int sum = 0;
     for (int i =0; i<a; i++){
-        if (palindrome(i)) sum++;
+        if (palindrome(i)) {sum++; printf("%d", i);}
     }
     printf("%d", sum);
 

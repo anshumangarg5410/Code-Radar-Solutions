@@ -1,5 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
+#include<ctype.h>
 
 int vowelcount(char *str){
     int count = 0;

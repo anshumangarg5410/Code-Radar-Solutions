@@ -2,7 +2,7 @@
 #include<stdlib.h>
 
 int palindrome(int num){
-    if (0 < num < 10) return 1;
+    if (0 < num && num < 10) return 1;
     if (num < 0) num = -num;
     int numcpy = num; int reverse = 0;
     while (numcpy > 0){
@@ -23,8 +23,8 @@ int main(){
     }
     int sum = 0;
     for (int i =0; i<a; i++){
-        sum++; 
-        printf("%d as of %d\n", i, palindrome(i));
+        if (palindrome(i)) {sum++; printf("%d as of %d\n", i, palindrome(i));}
     }
+    printf("-%d-", sum);
 
 }

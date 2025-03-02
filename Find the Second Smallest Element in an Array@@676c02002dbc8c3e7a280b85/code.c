@@ -5,7 +5,7 @@
 int minfunc(int ar[], int size){
     int min = INT_MAX;
     for(int i =0; i<size; i++){
-        if (ar[i] < min) min = ar[i];
+        if (ar[i] <= min) min = ar[i];
     }
     return min;
 }

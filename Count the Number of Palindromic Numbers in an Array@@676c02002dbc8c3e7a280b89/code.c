@@ -3,7 +3,7 @@
 
 int palindrome(int num){
     if (0 < num && num < 10) return 1;
-    if (num < 0) num = -num;
+    if (num < 0) return 0;
     int numcpy = num; int reverse = 0;
     while (numcpy > 0){
         reverse = reverse*10 + numcpy%10;

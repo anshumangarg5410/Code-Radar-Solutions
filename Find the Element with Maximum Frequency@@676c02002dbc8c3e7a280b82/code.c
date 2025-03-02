@@ -26,6 +26,7 @@ int main(){
             }
             i = 0;
             j++;
+            count = 0;
         }
         if (j == a-1) break;
     }

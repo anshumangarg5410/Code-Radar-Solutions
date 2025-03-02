@@ -1,29 +1,25 @@
-#include <stdio.h>
+#include<stdio.h>
 #include<stdlib.h>
+#include<limits.h>
+
+int maxfunc(int ar[], int size){
+    int max = INT_MIN;
+    for(int i =0; i<a; i++){
+        if (ar[i] > max) max = ar[i];
+    }
+    return max;
+}
 
 int main(){
-    int n;
-    scanf("%d", &n);
-    int *vector = malloc((n) * sizeof(int));
-    for(int i =0; i<n; i++){
-        scanf("%d", &vector[i]);
+    int a;
+    scanf("%d", &a);
+    int *myarray = malloc(a * sizeof(int));
+    for(int i =0;i <a, i++){
+        scanf("%d", &myarray[i]);
     }
-    int maxx = vector[0];
-    int target;
-    for(int i =0; i<n; i++){
-        if(vector[i] > maxx) {
-            maxx = vector[i];
-            target = i;
-        }
+    for(int i =0; i<a; i++){
+        if (myarray[i] == maxfunc(myarray, a)) myarray[i] = INT_MIN;
     }
-    vector[target] = 0;
-    maxx = vector[0];
-    for(int i =0; i<n; i++){
-        if(vector[i] > maxx) {
-            maxx = vector[i];
-        }
-    }
-    printf("%d", maxx);
+    return maxfunc(myarray, a);
 
-    return 0;
 }

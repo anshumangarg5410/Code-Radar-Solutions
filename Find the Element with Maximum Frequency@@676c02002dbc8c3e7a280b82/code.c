@@ -16,9 +16,11 @@ int main(){
             if (count > maxcount) {
                 maxcount = count;
                 ele = myarray[j];
+                count = 0;
             }
             else if (count == maxcount) {
                 if (ele > myarray[j]) ele = myarray[j];
+                count = 0;
             }
             i = 0;
             j++;

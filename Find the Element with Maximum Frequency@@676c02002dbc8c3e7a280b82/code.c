@@ -13,7 +13,7 @@ int main(){
     for (int i =0; i<=a; i++){
         if (myarray[j] == myarray[i]) count ++;
         if (i == a-1) {
-            printf("j: %d; i: %d; count: %d\n", j, i, count);
+            printf("j: %d; i: %d; count: %d; element: %d\n", j, i, count, ele);
             if (count > maxcount) {
                 maxcount = count;
                 ele = myarray[j];

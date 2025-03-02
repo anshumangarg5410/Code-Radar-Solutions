@@ -20,7 +20,7 @@ int main(){
     }
     int smallestele = minfunc(myarray, a);
     for(int i =0; i<a; i++){
-        if (myarray[i] == minfunc(myarray, a)) {myarray[i] = INT_MAX; printf("yes, changed");}
+        if (myarray[i] == smallestele) {myarray[i] = INT_MAX; printf("yes, changed");}
     }
     printf("%d\n", smallestele);
     if (smallestele == minfunc(myarray, a)) {

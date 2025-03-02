@@ -8,7 +8,7 @@ int main(){
     for(int i = 0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
-    int count = 0; int ele; int maxcount = 0;
+    int count = 0; int ele = 0; int maxcount = 0;
     int j = 0;
     for (int i =0; i<=a; i++){
         if (myarray[j] == myarray[i]) count ++;

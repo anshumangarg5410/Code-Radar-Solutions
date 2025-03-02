@@ -21,7 +21,7 @@ int main(){
     for(int i =0; i<a; i++){
         if (myarray[i] == minfunc(myarray, a)) myarray[i] = INT_MAX;
     }
-    printf("%d", smallestele);
+    printf("%d\n", smallestele);
     if (smallestele == minfunc(myarray, a)) {
         printf("-1");
         return -1;

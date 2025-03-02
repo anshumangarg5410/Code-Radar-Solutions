@@ -23,9 +23,8 @@ int main(){
     for(int i =0; i<a; i++){
         if (myarray[i] == smallestele) {myarray[i] = INT_MAX; condition++;}
     }
-    printf("%d", condition);
     int secondlar = minfunc(myarray, a);
-    if (condition == a-1) {
+    if (condition == a) {
         printf("-1");
         return -1;
     }

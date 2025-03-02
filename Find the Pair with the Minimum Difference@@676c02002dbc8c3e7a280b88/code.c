@@ -6,7 +6,7 @@ int main(){
     int a;
     scanf("%d", &a);
     int *myarray = malloc(a * sizeof(int));
-    for(it i = 0; i<a; i++){
+    for(int i = 0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
     int diff = INT_MAX; int ele1; int ele2; int j = 0;

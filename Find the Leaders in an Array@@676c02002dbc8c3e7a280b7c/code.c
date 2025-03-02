@@ -9,9 +9,9 @@ int main(){
         scanf("%d", &myarray[i]);
     }
     for (int j =0; j<a; j++){
-        if (((j == 0 && myarray[j+1]) < myarray[j]) || (j == a-1) && (myarray[j] > myarray[j-1])) printf("%d", myarray[j]);
+        if (((j == 0 && myarray[j+1]) < myarray[j]) || (j == a-1) && (myarray[j] > myarray[j-1])) printf("%d ", myarray[j]);
         if (j != 0 || j != a-1) {
-            if (myarray[j] > myarray[j-1] && myarray[j] > myarray[j+1]) printf("%d", myarray[j]);
+            if (myarray[j] > myarray[j-1] && myarray[j] > myarray[j+1]) printf("%d ", myarray[j]);
         }
     }
 }

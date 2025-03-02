@@ -4,7 +4,7 @@
 int leadercheck(int ar[], int size, int target){
     int condition = 1;
     for(int i = target; i<size; i++){
-        if (myarray[target] >= myarray{i}) condition = 1;
+        if (ar[target] >= ar[i]) condition = 1;
         else {
             return 0;
         }

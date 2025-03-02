@@ -15,7 +15,7 @@ int main(){
     }
     scanf("%d", &target);
     int j = 0;
-    for(int i =j+1; i<=a; i++){
+    for(int i =j+1; i<a; i++){
         if (sumchecker(myarray[j], myarray[i], target)) {
             printf("%d %d\n", myarray[j], myarray[i]);
         }

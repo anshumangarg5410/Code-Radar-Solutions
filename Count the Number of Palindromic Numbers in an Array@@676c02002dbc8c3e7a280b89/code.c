@@ -9,7 +9,6 @@ int palindrome(int num){
         reverse = reverse*10 + numcpy%10;
         numcpy = numcpy/10;
     }
-    printf("%d, %d", reverse, num);
     if (reverse == num) return 1;
     else return 0;
 }

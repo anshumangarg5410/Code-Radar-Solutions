@@ -12,7 +12,7 @@ int main(){
     int j = 0;
     for (int i =0; i<=a; i++){
         if (myarray[j] == myarray[i]) count ++;
-        if (i = a-1) {
+        if (i == a-1) {
             if (count > maxcount) {
                 maxcount = count;
                 ele = myarray[j];

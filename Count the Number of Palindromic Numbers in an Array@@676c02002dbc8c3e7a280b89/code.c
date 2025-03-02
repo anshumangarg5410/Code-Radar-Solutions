@@ -2,6 +2,8 @@
 #include<stdlib.h>
 
 int palindrome(int num){
+    if (0 < num < 10) return 1;
+    if (num < 0) num = -num;
     int numcpy = num; int reverse = 0;
     while (numcpy > 0){
         reverse = reverse*10 + numcpy%10;

@@ -16,7 +16,7 @@ int main(){
             ele1 = myarray[j]; ele2 = myarray[i]; diff = abs(myarray[j] - myarray[i]);
         }
         if (i = a-1) {
-            i = 0;
+            i = -1;
             j++;
         }
         if (j == a-1) break;

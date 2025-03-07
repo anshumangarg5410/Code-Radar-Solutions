@@ -14,7 +14,7 @@ int findUnsortedSubarray(int arr[], int size){
             break;
         }
     } 
-    printf("%d %d", first, last);
+    printf("\n%d %d\n", first, last);
 
 }
 

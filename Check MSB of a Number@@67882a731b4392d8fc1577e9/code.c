@@ -1,6 +1,6 @@
 #include<stdio.h>
 void checkMSB(int n){
-    if (n &(1<<30)){
+    if (n &(1<<31)){
         printf("Set");
     }
     else{

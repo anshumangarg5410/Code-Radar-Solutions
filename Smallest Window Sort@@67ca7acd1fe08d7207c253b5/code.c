@@ -7,7 +7,7 @@ int findUnsortedSubarray(int arr[], int size){
             first = arr[i];
             break;
             }
-        if (!((arr[i-1] < arr[i] && arr[i] < arr[i+1]) && (i != 0 && i != size-1))) {
+        if (!((arr[i-1] < arr[i] && arr[i] < arr[i+1]) && (i == 0 && i == size-1))) {
             first = arr[i];
             break;
         }
@@ -20,7 +20,7 @@ int findUnsortedSubarray(int arr[], int size){
             break;
         }
 
-        if (!((arr[i-1] < arr[i] && arr[i] < arr[i+1]) && (i != 0 && i != size-1))) {
+        if (!((arr[i-1] < arr[i] && arr[i] < arr[i+1]) && (i == 0 && i == size-1))) {
             last = arr[i];
             break;
         }

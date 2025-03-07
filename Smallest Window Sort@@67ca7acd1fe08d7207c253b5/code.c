@@ -7,13 +7,12 @@ int findUnsortedSubarray(int arr[], int size){
             first = arr[i];
             break;
             }
-
-        }
         if (!((arr[i-1] < arr[i] && arr[i] < arr[i+1]) && (i != 0 && i != size-1))) {
             first = arr[i];
             break;
         }
-    } 
+        }
+
     for(int i =size-2; i>0; i--){
 
         if ((i == size-1) && (arr[i] < arr[i-1])) {

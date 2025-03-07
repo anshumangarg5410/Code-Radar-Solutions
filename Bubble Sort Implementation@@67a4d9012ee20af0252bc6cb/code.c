@@ -10,5 +10,5 @@ int bubbleSort(int arr[n], int size){
             }
         }
     }
-    return arr;
+    return arr[];
 }

@@ -11,4 +11,5 @@ int main(){
         variable /= 10;
     }
     printf("%d", ainbinary);
+    return 0;
 }

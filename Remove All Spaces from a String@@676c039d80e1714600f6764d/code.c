@@ -12,10 +12,13 @@ void shifting(char mystr[], int len, int strt){
 int main(){
     char mystr[100];
     fgets(mystr, 100, stdin);
-    for(int i = 0; i<strlen(mystr);i++){
+    int i = 0;
+    while (i < strlen(mystr)) {
         if (mystr[i] == ' ') {
-            shifting(mystr, strlen(mystr), i);
-        };
+            shifting(mystr, i); 
+        } else {
+            i++; 
+        }
     }
     printf("%s", mystr);
 }

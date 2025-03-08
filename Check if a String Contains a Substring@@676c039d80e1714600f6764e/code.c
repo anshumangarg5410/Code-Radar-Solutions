@@ -7,7 +7,7 @@ int main(){
     fgets(mystr, 100, stdin);
     scanf(" %s", target);
     char *ans = strstr(mystr, target);
-    if (ans) printf("%s",ans); 
+    if (ans) printf("Yes"); 
     else printf("No");
 
 }

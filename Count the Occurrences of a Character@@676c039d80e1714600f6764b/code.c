@@ -4,10 +4,9 @@
 
 int main(){
     char mystr[100];
-    scanf("%s", &mystr);
+    scanf("%s",&mystr);
     char target;
-    scanf("%c", &target); int count = 0;
-    printf("%s, %c", mystr, target);
+    scanf(" %c", &target); int count = 0;
     for(int i =0; i<strlen(mystr); i++){
         if (mystr[i] == target) count++;
     }

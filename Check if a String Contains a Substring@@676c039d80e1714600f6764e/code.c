@@ -4,7 +4,8 @@
 
 int main(){
     char mystr[100][100]; char inputstr[100]; char inpstr[100]; char target[100];
-    scanf("%s", inputstr);
+    fgets(inputstr, 100, stdin);
+    strcpy(inpstr, inputstr);
     scanf("%s", target);
     printf("%s -- %s", inputstr, target);
     strcpy(inpstr, inputstr);

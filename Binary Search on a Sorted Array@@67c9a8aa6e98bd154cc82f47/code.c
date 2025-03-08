@@ -10,6 +10,6 @@ int binarySearch(int arr[], int n, int target){
     if (cond == n) {
         return n/2;
     }
-    else return ans;
+    else return result;
 
 }

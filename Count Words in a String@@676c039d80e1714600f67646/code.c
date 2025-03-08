@@ -7,7 +7,7 @@ int main(){
     while (1) {
         scanf("%s", &mystr);
         j++;
-        if (mystr[j] == "\0") break;
+        if (mystr[0] == "\0") break;
         words++;
     }
     printf("%d", words);

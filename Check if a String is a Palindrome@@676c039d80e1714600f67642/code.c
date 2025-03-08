@@ -26,7 +26,7 @@ int main(){
     int len = strlen(mystr);
     mystr = realloc(mystr, len);
     char *reversed = malloc(len * sizeof(char));
-    strcpy(reversed, mystr); reverse(reversed[], len);
+    strcpy(reversed, mystr); reverse(reversed, len);
     printf("%s", reversed);
 
 }

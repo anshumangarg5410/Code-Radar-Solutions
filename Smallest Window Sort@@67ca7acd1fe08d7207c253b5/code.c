@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int findsortedSubarray(int arr[], int size){
+int findUnsortedSubarray(int arr[], int size){
     int first, last;
 
     for (int i =0; i<size-1; i++){

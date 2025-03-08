@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-void reverse(char mystr[], int len){
+int reverse(char mystr[], int len){
     if (len %2 == 0){
         for (int i = 0; i<len/2; i++){
             char temp = mystr[i];
@@ -17,6 +17,7 @@ void reverse(char mystr[], int len){
             mystr[len-i-1] = temp;
         }
     }
+    return mystr;
 }
 
 int main(){

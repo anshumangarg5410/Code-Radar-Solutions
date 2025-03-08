@@ -25,6 +25,7 @@ int main(){
             comar2 = freq(mystr2, len2, target);
             if (comar1 != comar2) {
                 printf("No");
+                printf("%d %d", comar1, comar2);
                 return 0;
             }
         }

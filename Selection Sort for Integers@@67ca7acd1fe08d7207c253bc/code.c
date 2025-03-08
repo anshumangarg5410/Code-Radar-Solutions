@@ -2,7 +2,7 @@
 
 void selectionSort(int arr[], int size){
     for (int i = 0; i<size; i++){
-        int minele = 0;
+        int minele = i;
         for (int j = i+1; j<size; i++){
             if (arr[j] <= minele) minele = j;
         }

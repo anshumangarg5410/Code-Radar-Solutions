@@ -23,7 +23,7 @@ int main() {
     while (1) {
         fgets(mystr, 100, stdin);  // Read one word
 
-        if (mystr[0] == '\0') break;  // Stop if empty string
+        if (mystr[0] == '\n') break;  // Stop if empty string
 
         words++;
     }

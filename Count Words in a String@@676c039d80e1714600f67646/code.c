@@ -1,20 +1,15 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
 
-int main() {
-    char mystr[100]; 
+int main(){
+    char mystr[100];
+    fgets(mystr, 100, stdin);
     int words = 0;
-
-    while (1) {
-        fgets(mystr, sizeof(mystr), stdin);  // Read full line including spaces
-
-        if (mystr[0] == '\n')  // If only Enter is pressed, stop
-            break;
-
-        words++;  // Increase word count
+    char *word = strtok(mystr, "\n");
+    while (word != null){
+        words++;
+        token = strtok(NULL, "\n");
     }
-
-    printf("Total words: %d\n", words);
-    return 0;
+    printf("%d", words);
 }

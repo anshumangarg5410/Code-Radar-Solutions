@@ -7,5 +7,6 @@ int main(){
     fgets(first, 100, stdin);
     fgets(second, 100, stdin);
     char final[100] = first + second;
-    printf("%s", final);
+    strcat(first, second);
+    printf("%s", first);
 }

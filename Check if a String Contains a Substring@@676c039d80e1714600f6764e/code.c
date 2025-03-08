@@ -6,6 +6,7 @@ int main(){
     char mystr[100][100]; char inputstr[100]; char inpstr[100]; char target[100];
     scanf("%s", inputstr);
     scanf("%s", target);
+    printf("%s -- %s", inputstr, target);
     strcpy(inpstr, inputstr);
     char *token = strtok(inpstr, " \n"); int word = 0;
     while(token!= NULL){

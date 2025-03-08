@@ -16,7 +16,7 @@ int main(){
         strcpy(mystr[i], tok);
         tok = strtok(NULL, " \n");
     }
-    int maxlength = 0, char result[100];
+    int maxlength = 0; char result[100];
     for(int i =0; i<word; i++){
         int templength = strlen(mystr[i]);
         if (templength > maxlength) {

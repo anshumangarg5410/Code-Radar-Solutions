@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-int selectionsorter(int arr[], int size){
+void selectionsorter(int arr[], int size){
     for (int i = 0; i<size; i++){
         int minele = 0;
         for (int j = i+1; j<size; i++){
@@ -10,5 +10,4 @@ int selectionsorter(int arr[], int size){
         arr[i] = arr[minele];
         arr[minele] = temp;
     }
-    return arr;
 }

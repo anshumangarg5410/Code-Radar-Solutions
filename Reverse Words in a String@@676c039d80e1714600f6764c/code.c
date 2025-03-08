@@ -20,7 +20,7 @@ void reverse(char mystr[], int len){
 }
 
 int main(){
-    int mystr[100][100]; int inpstr[100];
+    int mystr[100][100]; char inpstr[100];
     fgets(inpstr, 100, stdin);
     char *token = strtok(inpstr, " \n"); int word = 0;
     while(token!= NULL){

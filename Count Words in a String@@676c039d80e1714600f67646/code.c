@@ -12,22 +12,20 @@
 //     }
 //     printf("%d", words);
 // }
-
 #include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 
 int main() {
     char mystr[100]; 
     int words = 0;
 
-    printf("Enter a sentence: ");
-    fgets(mystr, 100, stdin);  // Read full line
+    while (1) {
+        scanf("%s", mystr);  // Read one word
 
-    // Tokenize string by spaces
-    char *token = strtok(mystr, " \n");  
-    while (token != NULL) {
+        if (mystr[0] == '\0') break;  // Stop if empty string
+
         words++;
-        token = strtok(NULL, " \n");  // Get next word
     }
 
     printf("Total words: %d\n", words);

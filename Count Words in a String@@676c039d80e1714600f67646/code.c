@@ -21,7 +21,7 @@ int main() {
     int words = 0;
 
     while (1) {
-        scanf("%s", mystr);  // Read one word
+        fgets(mystr, 100, stdin);  // Read one word
 
         if (mystr[0] == '\0') break;  // Stop if empty string
 

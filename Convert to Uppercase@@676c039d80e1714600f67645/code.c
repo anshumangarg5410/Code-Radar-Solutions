@@ -5,6 +5,6 @@
 int main(){
     char mystr[100];
     fgets(mystr, 100, stdin);
-    toupper(mystr);
+    mystr = toupper(mystr);
     printf("%s", mystr);
 }

@@ -27,7 +27,8 @@ int main(){
     mystr = realloc(mystr, len);
     char *reversed = malloc(len * sizeof(char));
     strcpy(reversed, mystr); reverse(reversed, len);
-    printf("%s", reversed);
+    if (strcmp(mystr, reversed) == 0) printf("Yes");
+    else printf("No");
 
 }
 

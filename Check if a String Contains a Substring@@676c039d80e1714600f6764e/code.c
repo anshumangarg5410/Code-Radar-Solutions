@@ -7,7 +7,6 @@ int main(){
     fgets(inputstr, 100, stdin);
     strcpy(inpstr, inputstr);
     scanf(" %s", target);
-    printf("%s", target);
     strcpy(inpstr, inputstr);
     char *token = strtok(inpstr, " \n"); int word = 0;
     while(token!= NULL){
@@ -20,7 +19,7 @@ int main(){
         tok = strtok(NULL, " \n");
     }
     for(int i =0; i<word; i++){
-        if (strcpy(mystr[i], target) == 0) {
+        if (strcmp(mystr[i], target) == 0) {
             printf("Yes");
             return 1;
         }

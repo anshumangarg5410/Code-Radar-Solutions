@@ -30,7 +30,7 @@ int main(){
             cond = 1;
         }
         if (i == len1 - 1){
-            if (cond = 0) {
+            if (cond == 0) {
                 printf("No");
                 return 0;
             }

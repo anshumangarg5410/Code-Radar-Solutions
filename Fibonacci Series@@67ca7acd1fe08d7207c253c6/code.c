@@ -1,10 +1,11 @@
 #include<stdio.h>
 
-int fibonacci(int n){
-    if(n == 1) return 1;
-    return fibonacci(n-1) + fibonacci(n-2);
-}
-
 void fibonacciSeries(int n){
-    printf("%d", fibonacci(n));
+    int a =0; b= 1;
+    for(int i =0; i<n; i++){
+        printf("%d", b);
+        int temp = b;
+        b = a + b;
+        a = temp;
+    }
 }

@@ -15,6 +15,7 @@ int main(){
     fgets(mystr1, 100, stdin);
     fgets(mystr2, 100, stdin);
     int len1 = strlen(mystr1); int len2 = strlen(mystr2);
+    printf("%d %d", len1, len2);
     int comar1; int comar2;
     if (len1 != len2) {printf("No"); return 0;}
     int j = 0;
@@ -25,7 +26,7 @@ int main(){
             comar2 = freq(mystr2, len2, target);
             if (comar1 != comar2) {
                 printf("No");
-                printf("well here:");
+                printf("well here: %d %d", comar1, comar2);
                 return 0;
             }
         }

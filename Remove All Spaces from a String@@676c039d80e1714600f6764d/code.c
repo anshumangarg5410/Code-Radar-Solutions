@@ -3,8 +3,9 @@
 #include<string.h>
 
 void shifting(char mystr[], int len, int strt){
-    for(int i =strt; i<len-1; i++){
+    for(int i =strt; i<len; i++){
         mystr[i] = mystr[i+1];
+        if (i == len-1) mystr[i] = ' ';
     }
 }
 

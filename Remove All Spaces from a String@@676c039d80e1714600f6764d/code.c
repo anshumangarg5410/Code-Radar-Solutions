@@ -6,7 +6,6 @@ void shifting(char mystr[], int strt){
     int len = strlen(mystr);
     for(int i =strt; i<len; i++){
         mystr[i] = mystr[i+1];
-        if (i == len-1) mystr[i] = ' ';
     }
 }
 

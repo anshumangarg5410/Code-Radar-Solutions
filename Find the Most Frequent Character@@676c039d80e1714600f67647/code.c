@@ -18,7 +18,6 @@ int main(){
             }
             else if (tempmax == max){
                 if (mystr[maxindex] > mystr[j]) maxindex = j;
-                else maxindex = i;
             }
             tempmax = 0;
             i = -1;

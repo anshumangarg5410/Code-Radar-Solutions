@@ -15,7 +15,6 @@ int main(){
     fgets(mystr1, 100, stdin);
     fgets(mystr2, 100, stdin);
     int len1 = strlen(mystr1) - 1; int len2 = strlen(mystr2);
-    printf("%d %d", len1, len2);
     int comar1; int comar2;
     if (len1 != len2) {printf("No"); return 0;}
     int j = 0;

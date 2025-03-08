@@ -11,7 +11,7 @@ int main(){
             tempmax++; 
         }
         if (i == strlen(mystr) - 1){
-            if (tempmax > max) {
+            if (tempmax >= max) {
                 max = tempmax;
                 maxindex = j;
             }

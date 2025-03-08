@@ -4,9 +4,8 @@
 
 int main(){
     char first[100],second[100];
-    fgets(first, 100, stdin);
-    getchar();
-    fgets(second, 100, stdin);
+    scanf("%d", first);
+    scanf("%d", second);
     strcat(first, second);
     printf("%s", first);
 }

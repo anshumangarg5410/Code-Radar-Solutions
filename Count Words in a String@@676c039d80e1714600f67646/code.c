@@ -6,10 +6,10 @@ int main(){
     char mystr[100];
     fgets(mystr, 100, stdin);
     int words = 0;
-    char *word = strtok(mystr, "\n");
+    char *word = strtok(mystr, " \n");
     while (word != NULL){
         words++;
-        word = strtok(NULL, "\n");
+        word = strtok(NULL, " \n");
     }
     printf("%d", words);
 }

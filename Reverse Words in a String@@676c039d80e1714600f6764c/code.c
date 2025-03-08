@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-int reverse(char mystr[], int len){
+void reverse(char mystr[], int len){
     if (len %2 == 0){
         for (int i = 0; i<len/2; i++){
             char temp = mystr[i];
@@ -17,7 +17,6 @@ int reverse(char mystr[], int len){
             mystr[len-i-1] = temp;
         }
     }
-    return mystr;
 }
 
 int main(){
@@ -35,7 +34,10 @@ int main(){
         tok = strtok(NULL, " \n");
     }
     for(int i =0; i<word; i++){
-        printf("%s", reverse(mystr[i], strlen(mystr[i])));
+        reverse(mystr[i], strlen(mystr[i]));
+    }
+    for(int i =0; i<word; i++){
+        printf("%s ", mystr[i]);
     }
 
 

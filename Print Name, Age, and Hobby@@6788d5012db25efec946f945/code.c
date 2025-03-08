@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stblib.h>
 
 int main(){
     char name[100],hobby[100]; int age;

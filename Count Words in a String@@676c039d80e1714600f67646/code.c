@@ -7,7 +7,7 @@ int main(){
     fgets(mystr, 100, stdin);
     int words = 0;
     char *word = strtok(mystr, "\n");
-    while (word != null){
+    while (word != NULL){
         words++;
         token = strtok(NULL, "\n");
     }

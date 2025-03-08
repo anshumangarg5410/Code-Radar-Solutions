@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include<stdlib.h>
 
 int findUnsortedSubarray(int arr[], int size){
     int first = 0, last = 0;

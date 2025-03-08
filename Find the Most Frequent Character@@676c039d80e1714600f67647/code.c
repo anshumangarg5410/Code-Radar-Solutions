@@ -5,25 +5,26 @@
 int main(){
     char mystr[100];
     fgets(mystr, 100, stdin); int j =0; int max = 0; int maxindex = 0;int tempmax=0;
-    for(int i =0; i<=strlen(mystr); i++){
+    int len = strlen(mystr);
+    for(int i =0; i<=len; i++){
         if (mystr[i] == mystr[j]) {
             tempmax++; 
         }
-        if (i == strlen(mystr) - 1){
+        if (i == len - 1){
             if (tempmax > max) {
                 max = tempmax;
                 maxindex = j;
                 
             }
             else if (tempmax == max){
-                if (mystr[i] >= mystr[j]) maxindex = j;
+                if (mystr[i] > mystr[j]) maxindex = j;
                 else maxindex = i;
             }
             tempmax = 0;
             i = -1;
             j++;
         }
-        if (j == strlen(mystr) - 1) break;
+        if (j == len - 1) break;
     }
     printf("%c", mystr[maxindex]);
 }

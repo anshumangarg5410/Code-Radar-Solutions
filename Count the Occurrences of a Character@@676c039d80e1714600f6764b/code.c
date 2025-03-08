@@ -7,6 +7,7 @@ int main(){
     scanf("%s", &mystr);
     char target;
     scanf("%c", &target); int count = 0;
+    printf("%s", "%c", mystr, target);
     for(int i =0; i<strlen(mystr); i++){
         if (mystr[i] == target) count++;
     }

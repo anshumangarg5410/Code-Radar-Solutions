@@ -30,12 +30,13 @@ int main(){
             cond = 1;
         }
         if (i == len1 - 1){
-            i = -1;
             if (cond = 0) {
                 printf("No");
                 return 0;
             }
+            i = -1;
             j++;
+            cond = 0;
         }
         if (j == len1) break;
  

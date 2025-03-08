@@ -3,7 +3,7 @@
 #include<string.h>
 
 int main(){
-    char mystr[100][100]; int j=0; int words = 0;
+    char mystr[100]; int j=0; int words = 0;
     while (1) {
         scanf("%s", &mystr[j]);
         j++;

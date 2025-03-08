@@ -3,7 +3,7 @@
 int comparison(char arr[][100], int i, int target, int minele){
     if (arr[i][target] < arr[minele][target]) return i;
     else if (arr[i][target] == arr[minele][target]){
-        comparison(char arr[][100], int i, int target++, int minele)
+        comparison(char arr[][100], int i, int target++, int minele);
     }
     return -1;
 }

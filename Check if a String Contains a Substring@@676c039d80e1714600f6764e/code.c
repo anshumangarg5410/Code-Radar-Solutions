@@ -18,7 +18,7 @@ int main(){
         tok = strtok(NULL, " \n");
     }
     for(int i =0; i<word; i++){
-        if (mystr[i] == target) {
+        if (strcpy(mystr[i], target) == 0) {
             printf("Yes");
             return 1;
         }

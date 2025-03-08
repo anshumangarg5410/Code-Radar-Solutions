@@ -6,7 +6,7 @@ int main(){
     char mystr[100];
     fgets(mystr, 100, stdin);
     for(int i = 0; i<strlen(mystr);i++){
-        if (mystr[i] == ' ') mystr[i] = 0;
+        if (mystr[i] == ' ') mystr[i] = '3';
     }
     printf("%s", mystr);
 }

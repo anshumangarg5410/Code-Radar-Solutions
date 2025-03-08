@@ -18,7 +18,7 @@ int main(){
     int comar1; int comar2;
     if (len1 != len2) {printf("No"); return 0;}
     int j = 0;
-    for(int i =0; i<=len; i++){
+    for(int i =0; i<=len1; i++){
         int target = mystr1[j]; 
         if (mystr[i] == target) {
             comar1 = freq(mystr1, len1, target);
@@ -32,7 +32,7 @@ int main(){
             i = -1;
             j++;
         }
-        if (j == size) break;
+        if (j == len1) break;
  
     }
     printf("Yes");

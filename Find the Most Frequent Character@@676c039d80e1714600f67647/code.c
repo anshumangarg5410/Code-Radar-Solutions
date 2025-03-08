@@ -23,7 +23,7 @@ int main(){
             i = -1;
             j++;
         }
-        if (j == len - 1) break;
+        if (j == len) break;
     }
     printf("%c", mystr[maxindex]);
 }

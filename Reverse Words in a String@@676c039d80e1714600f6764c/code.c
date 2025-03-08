@@ -34,7 +34,7 @@ int main(){
         tok = strtok(NULL, " \n");
     }
     for(int i =0; i<word; i++){
-        printf("%s - ", mystr[i]);
+        printf("%s", reverse(mystr[i], strlen(mystr[i])));
     }
 
 

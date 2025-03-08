@@ -20,7 +20,7 @@ int main(){
     int j = 0;
     for(int i =0; i<=len1; i++){
         int target = mystr1[j]; 
-        if (mystr[i] == target) {
+        if (mystr2[i] == target) {
             comar1 = freq(mystr1, len1, target);
             comar2 = freq(mystr2, len2, target);
             if (comar1 != comar2) {

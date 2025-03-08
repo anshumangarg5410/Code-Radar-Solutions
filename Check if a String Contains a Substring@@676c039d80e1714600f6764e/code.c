@@ -6,6 +6,6 @@ int main(){
     char mystr[100]; char target[100];
     fgets(mystr, 100, stdin);
     scanf(" %s", target);
-    int *ans = strstr(mystr, target);
+    char *ans = strstr(mystr, target);
     printf("%d", ans);
 }

@@ -33,6 +33,6 @@ int findUnsortedSubarray(int arr[], int size){
             }
         }
     }
-    int result = abs(first - last);
+    int result = abs(first - last) + 1;
     return result;
 }

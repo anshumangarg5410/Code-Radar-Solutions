@@ -7,7 +7,7 @@ int main(){
     fgets(inputstr, 100, stdin);
     strcpy(inpstr, inputstr);
     scanf(" %s", target);
-    printf("%sand%s", inputstr, target);
+    printf("%s", target);
     strcpy(inpstr, inputstr);
     char *token = strtok(inpstr, " \n"); int word = 0;
     while(token!= NULL){

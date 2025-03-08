@@ -2,7 +2,11 @@
 #include<stdlib.h>
 #include<string.h>
 
-int fibonacciSeries(int n){
+int fibonacci(int n){
     if(n == 1) return 1;
-    return fibonacciSeries(n-1) + fibonacciSeries(n-2);
+    return fibonacci(n-1) + fibonacci(n-2);
+}
+
+int fibonacciSeries(int n){
+    printf("%d", fibonacci(n));
 }

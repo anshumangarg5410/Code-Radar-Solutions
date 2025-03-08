@@ -1,28 +1,24 @@
 #include<stdio.h>
 
-int comparison(char arr[][100], int i, int target, int minele){
-    if (arr[i][target] < arr[minele][target]) return i;
-    else if (arr[i][target] == arr[minele][target]){
-        comparison(char arr[][100], int i, int target++, int minele);
-    }
-    return -1;
-}
-
-void selectionSort(char arr[][100], int size){
-    for(int i =0; i<size; i++){
-        int targetchar = 0; int minele = 0;
-        for(int j =i+1; j<size; j++){
-            if (comparison(arr[][100], i, targetchar, minele) >= 0) minele = comparison(arr[][100], i, targetchar, minele);
-            else printf("error!");
+void selectionSort(char arr[][100], int size) {
+    for (int i = 0; i < size-1; i++) {
+        int minele = i; 
+        for (int j=i+1; j<size; j++) {
+            if (strcmp(arr[j], arr[minele]) < 0) { 
+                minele = j;
+            }
         }
-        int temp = arr[i];
-        arr[i] = arr[minele];
-        arr[minele] = temp;
+        char temp[100];
+        strcpy(temp, arr[i]);
+        strcpy(arr[i], arr[minele]);
+        strcpy(arr[minele], temp);
     }
 }
 
-void printArray(char arr[], int size){
+
+
+void printArray(char arr[][100], int size){
     for(int i =0; i<size; i++){
-        printf("%d ", arr[i]);
+        printf("%s ", arr[i]);
     }
 }

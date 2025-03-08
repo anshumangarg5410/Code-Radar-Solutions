@@ -13,9 +13,8 @@ int freq(char arr[], int size, char target){
 int main(){
     char mystr1[100]; char mystr2[100];
     fgets(mystr1, 100, stdin);
-    getchar();
     fgets(mystr2, 100, stdin);
-    int len1 = strlen(mystr1); int len2 = strlen(mystr2);
+    int len1 = strlen(mystr1) - 1; int len2 = strlen(mystr2);
     printf("%d %d", len1, len2);
     int comar1; int comar2;
     if (len1 != len2) {printf("No"); return 0;}

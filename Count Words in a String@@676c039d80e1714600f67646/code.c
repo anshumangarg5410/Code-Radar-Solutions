@@ -9,7 +9,7 @@ int main(){
     char *word = strtok(mystr, "\n");
     while (word != NULL){
         words++;
-        token = strtok(NULL, "\n");
+        word = strtok(NULL, "\n");
     }
     printf("%d", words);
 }

@@ -1,0 +1,36 @@
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+
+int count(char arr[], char target, int a){
+    int count = 0;
+    for(int i =0; i<a; i++){
+        if (arr[i] == target) count++;
+    }
+    return count;
+}
+
+int checkrep(char arr[], int a, char target){
+    for(int i =0; i<a; i++){
+        if (arr[i] == target) return 0;
+    }
+    return 1;
+}
+
+int compressString(char arrini[], char arrcomp[]){
+    int len = strlen(arrini); int j =0; int h = 0;
+    char seen[100];
+    for(int i =0; i<len; i++){
+        int count = count(arrini, arrini[i], len);
+        if (count == 1 && checkrep(seen, strlen(seen), arr[i])) {
+            strcpy(arrcomp[j], ("%c", arrini[i]));
+            strcpy(seen[h], arrini[i]);
+            j++; h++;
+        }
+        else if(checkrep(seen, strlen(seen), arr[i])) {
+            strcpy(arrcomp[j], ("%c%d", arrini[i], count));
+            strcpy(seen[h], arrini[i]);
+            j++; h++;
+        }
+    }
+}

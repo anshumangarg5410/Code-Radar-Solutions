@@ -21,14 +21,14 @@ int compressString(char arrini[], char arrcomp[]){
     int len = strlen(arrini); int j =0; int h = 0;
     char seen[100];
     for(int i =0; i<len; i++){
-        int count = count(arrini, arrini[i], len);
-        if (count == 1 && checkrep(seen, strlen(seen), arr[i])) {
+        int countt = count(arrini, arrini[i], len);
+        if (countt == 1 && checkrep(seen, strlen(seen), arr[i])) {
             strcpy(arrcomp[j], ("%c", arrini[i]));
             strcpy(seen[h], arrini[i]);
             j++; h++;
         }
         else if(checkrep(seen, strlen(seen), arr[i])) {
-            strcpy(arrcomp[j], ("%c%d", arrini[i], count));
+            strcpy(arrcomp[j], ("%c%d", arrini[i], countt));
             strcpy(seen[h], arrini[i]);
             j++; h++;
         }

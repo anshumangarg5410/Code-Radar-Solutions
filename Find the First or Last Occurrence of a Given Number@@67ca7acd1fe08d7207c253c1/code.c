@@ -12,5 +12,5 @@ int findOccurrence(int arr[], int a, int target, char mode){
             if (arr[i] == target) return i;
         }
     }
-
+    return -1;
 }

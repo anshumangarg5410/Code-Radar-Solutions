@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-int bubbleSort(char arr[][100], int a){
+void bubbleSort(char arr[][100], int a){
     for(int i =0; i<a; i++){
         for(int j = 0; j<a-1; j++){
             if (strcmp(arr[j], arr[j+1]) > 0) {
@@ -11,6 +11,12 @@ int bubbleSort(char arr[][100], int a){
                 strcpy(arr[j+1], temp);
             }
         }
+    }
+}
+
+void printArray(char arr[][100], int n){
+    for(int i =0; i<n;i++){
+        printf("%s", arr[i]);
     }
 }
 

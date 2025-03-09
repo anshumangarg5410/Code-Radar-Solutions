@@ -10,13 +10,11 @@ int seenin(int arr[], int a, int target){
 
 int findKthMissing(int arr[], int a, int k){
     int elecnt = 1; int ele = 1;
-    for(int i =0; i<a; i++){
+    while (1) {
         if (seenin(arr, a, ele) == 0) {
             elecnt++;
+            if (elecnt == k) return ele;
         }
-        if (elecnt == k) {
-            return ele ;
-        };
         ele++;
     }
 }

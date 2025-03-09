@@ -22,12 +22,12 @@ int compressString(char arrini[], char arrcomp[]){
     char seen[100];
     for(int i =0; i<len; i++){
         int countt = count(arrini, arrini[i], len);
-        if (countt == 1 && checkrep(seen, strlen(seen), arr[i])) {
+        if (countt == 1 && checkrep(seen, strlen(seen), arrini[i])) {
             strcpy(arrcomp[j], ("%c", arrini[i]));
             strcpy(seen[h], arrini[i]);
             j++; h++;
         }
-        else if(checkrep(seen, strlen(seen), arr[i])) {
+        else if(checkrep(seen, strlen(seen), arrini[i])) {
             strcpy(arrcomp[j], ("%c%d", arrini[i], countt));
             strcpy(seen[h], arrini[i]);
             j++; h++;

@@ -15,6 +15,7 @@ int smalles(int arr[], int a){
 }
 
 int kthSmallest(int arr[], int a, int k){
+    if (k > a) return -1;
     int result = 0;
     for(int i =0; i<k; i++){
         result = smalles(arr, a);

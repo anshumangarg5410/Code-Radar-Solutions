@@ -14,12 +14,12 @@ int repcheck(char arr[], int n, char target){
 int main(){
     char mystr[100];
     fgets(mystr, 100, stdin);
-    len = strlen(mystr);
+    int len = strlen(mystr);
     for(int i =0; i<len; i++){
         if (repcheck(mystr, len, mystr[i]) == 1) {
             printf("%c", mystr[i]);
             return 1;
         }
     }
-    
+
 }

@@ -2,9 +2,8 @@
 #include<stdlib.h>
 
 int isprime(int n){
-    if (n == 0 || n == 1) return 0;
+    if (n == 0 || n == 1 || n < 0) return 0;
     if (n == 2) return 1;
-    if (n < 0) n = -n;
     for(int i = 2; i<n; i++){
         if (n%i == 0) return 0;
     }

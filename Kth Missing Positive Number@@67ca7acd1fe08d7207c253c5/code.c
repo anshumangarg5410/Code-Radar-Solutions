@@ -9,7 +9,7 @@ int seenin(int arr[], int a, int target){
 }
 
 int findKthMissing(int arr[], int a, int k){
-    int elecnt = 1; int ele = 1;
+    int elecnt = 0; int ele = 1;
     while (1) {
         if (seenin(arr, a, ele) == 0) {
             elecnt++;

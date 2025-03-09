@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-int seenin(int arr[], int a, int targ){
+int seenin(int arr[], int a, int target){
     for(int i =0; i<a;i++){
         if (arr[i] == target) return 1;
     }

@@ -20,17 +20,17 @@ int checkrep(char arr[], int a, char target){
 int compressString(char arrini[], char arrcomp[]){
     int len = strlen(arrini); int j =0; int h = 0;
     char seen[100];
-    for(int i =0; i<len; i++){
-        int countt = count(arrini, arrini[i], len);
-        if (countt == 1 && checkrep(seen, strlen(seen), arrini[i])) {
-            strcpy(arrcomp[j], ("%c", arrini[i]));
-            strcpy(seen[h], arrini[i]);
-            j++; h++;
+    for(int i = 0; i < len; i++) {
+        char ch = arrini[i]; int freq = count(arrini, ch, len);
+        if (checkrep(seen, h, ch)) {
+            seen[h++] = ch;  
+            arrcomp[j++] = ch; 
+            if (freq > 1) {
+                char num[10];
+                sprintf(num, "%d", freq);  
+                for (int k = 0; num[k] != '\0'; k++) {
+                    arrcomp[j++] = num[k]; 
+                }
+            }
         }
-        else if(checkrep(seen, strlen(seen), arrini[i])) {
-            strcpy(arrcomp[j], ("%c%d", arrini[i], countt));
-            strcpy(seen[h], arrini[i]);
-            j++; h++;
-        }
-    }
 }

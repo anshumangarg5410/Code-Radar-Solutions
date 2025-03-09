@@ -33,4 +33,4 @@ int compressString(char arrini[], char arrcomp[]){
                 }
             }
         }
-}
+}}

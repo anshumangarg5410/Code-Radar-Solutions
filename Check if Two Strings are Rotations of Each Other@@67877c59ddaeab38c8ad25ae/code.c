@@ -26,6 +26,6 @@ int main () {
     strcpy(myrotcpy, myrot);
     rotate(myrotcpy, len);
     for(int i =0; i<len; i++){
-        printf("%c", myrot[i]);
+        printf("%c", myrotcpy[i]);
     }
 }

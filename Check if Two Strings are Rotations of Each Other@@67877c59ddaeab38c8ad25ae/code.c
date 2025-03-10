@@ -22,7 +22,8 @@ int main () {
     fgets(mystr, 100, stdin);
     char myrot[100]; char myrotcpy[100];
     scanf(" %s", myrot);
-    int len = strlen(mystr);
+    int len = strlen(mystr); int len2 = strlen(myrot);
+    printf("%d", len2);
     strcpy(myrotcpy, myrot);
     rotate(myrotcpy, len);
     for(int i =0; i<len; i++){

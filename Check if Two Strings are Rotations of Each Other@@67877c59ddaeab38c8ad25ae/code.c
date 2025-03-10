@@ -19,10 +19,11 @@ void rotate(char arr[], int n){
 
 int main () { 
     char mystr[100];
-    int len = strlen(mystr);
+    printf("%d", len);
     fgets(mystr, 100, stdin);
     char myrot[100]; char myrotcpy[100];
     scanf(" %s", myrot);
+    int len = strlen(mystr);
     strcpy(myrotcpy, myrot);
     rotate(myrotcpy, len);
     for(int i =0; i<len; i++){

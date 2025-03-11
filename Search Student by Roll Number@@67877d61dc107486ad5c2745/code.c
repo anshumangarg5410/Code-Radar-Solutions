@@ -20,9 +20,9 @@ int main(){
     int found = 0;
     for (int i = 0; i < a; i++) {
         if (s[i].rollnumber == inmarks) {
-            printf("Roll Number: %d\n", s[i].rollnumber);
-            printf("Name: %s\n", s[i].name);
-            printf("Marks: %.2f\n", s[i].marks);
+            printf("Roll Number: %d, ", s[i].rollnumber);
+            printf("Name: %s, ", s[i].name);
+            printf("Marks: %.2f", s[i].marks);
             found = 1;
             break;
         }

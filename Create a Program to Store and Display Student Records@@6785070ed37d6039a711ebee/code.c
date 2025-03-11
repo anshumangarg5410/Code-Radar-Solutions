@@ -13,9 +13,9 @@ int main(){
     int a;
     scanf("%d", &a);
     for (int i = 0; i<a; i++){
-        scanf("%d ", s[i].roll);
-        scanf(" %s ", s[i].arrr);
-        scanf(" %f", s[i].marks);
+        scanf("%d ", &s[i].roll);
+        scanf(" %s ", &s[i].arrr);
+        scanf(" %f", &s[i].marks);
     }
     for (int i = 0; i<a; i++){
         printf("Roll Number: %d, Name: %s, Marks: %.2f", s[i].roll, s[i].arrr, s[i].marks);

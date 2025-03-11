@@ -19,7 +19,7 @@ int main(){
     scanf("%d", &inmarks);
     int found = 0;
     for (int i = 0; i < a; i++) {
-        if (s[i].rollnumber == search_roll) {
+        if (s[i].rollnumber == inmarks) {
             printf("Roll Number: %d\n", s[i].rollnumber);
             printf("Name: %s\n", s[i].name);
             printf("Marks: %.2f\n", s[i].marks);

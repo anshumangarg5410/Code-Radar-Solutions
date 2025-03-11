@@ -9,7 +9,7 @@ typedef struct student{
 } student;
 
 int max(struct student s[], int n){
-    int current = s1.rollnumber;
+    int current = 0;
     for(int i =0; i<n; i++){
         if (s[i].rollnumber > s[current].rollnumber) current = i;
     }

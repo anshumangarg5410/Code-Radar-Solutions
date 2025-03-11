@@ -23,7 +23,7 @@ int main(){
     for(int i =0; i<a; i++){
         scanf("%d %s %f", &s[i].rollnumber, &s[i].name, &s[i].marks);
     }
-    int res = max(s, a);
+    int result = max(s, a);
     printf("Top Scorer: Roll Number: %d, Name: %s, Marks: %.2f", s[result].rollnumber, s[result].name, s[result].marks);
 
 }

@@ -9,9 +9,9 @@ typedef struct student {
 } student;
 
 int main(){
-    student s1, s2;
     int a;
     scanf("%d", &a);
+    student s[a];
     for (int i = 0; i<a; i++){
         scanf("%d ", &s[i].roll);
         scanf(" %s ", &s[i].arrr);

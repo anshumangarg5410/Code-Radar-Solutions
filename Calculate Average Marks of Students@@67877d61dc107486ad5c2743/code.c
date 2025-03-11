@@ -1,5 +1,5 @@
 #include<stdio.h>
-#inlcude<stdlib>
+#inlcude<stdlib.h>
 #include<string.h>
 
 typedef struct student {

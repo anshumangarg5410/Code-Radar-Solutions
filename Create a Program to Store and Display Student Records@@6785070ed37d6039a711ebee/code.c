@@ -4,7 +4,7 @@
 
 typedef struct student {
     int roll;
-    char arrayy[100];
+    char arrr[100];
     float marks;
 } student;
 

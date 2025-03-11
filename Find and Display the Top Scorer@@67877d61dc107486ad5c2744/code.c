@@ -8,7 +8,7 @@ typedef struct student{
     float marks;
 } student;
 
-int max(struct student[], int n){
+int max(struct student s[], int n){
     int current = s1.rollnumber;
     for(int i =0; i<n; i++){
         if (s[i].rollnumber > s[current].rollnumber) current = i;

@@ -24,6 +24,6 @@ int main(){
         scanf("%d %s %f", &s[i].rollnumber, &s[i].name, &s[i].marks);
     }
     int result = max(s, a);
-    printf("Student with Minumum Marks: Roll Number: %d, Name: %s, Marks: %.2f", s[result].rollnumber, s[result].name, s[result].marks);
+    printf("Student with Minimum Marks: Roll Number: %d, Name: %s, Marks: %.2f", s[result].rollnumber, s[result].name, s[result].marks);
 
 }

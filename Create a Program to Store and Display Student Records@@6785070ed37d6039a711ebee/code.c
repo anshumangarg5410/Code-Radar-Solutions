@@ -6,7 +6,7 @@ typedef struct student {
     int roll;
     char arrayy[100];
     float marks;
-} 
+} student;
 
 int main(){
     student s1, s2;

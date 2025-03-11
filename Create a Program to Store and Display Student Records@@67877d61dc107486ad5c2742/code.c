@@ -17,5 +17,6 @@ int main(){
     }
     for(int i = 0; i<a; i++){
         printf("Roll Number: %d, Name: %s, Marks: %.2f", s[i].rollnumber, s[i].name, s[i].marks);
+        printf("\n");
     }
 }

@@ -14,8 +14,8 @@ void bubblesort(struct student s[], int a){
         for(int j = 0; j<a-1; j++){
             if (s[j].marks > s[j+1].marks) {
                 student temp = s[j];
-                s[j+1] = s[j];
-                s[j] = temp;
+                s[j] = s[j + 1];
+                s[j + 1] = temp;
             }
         }
     }

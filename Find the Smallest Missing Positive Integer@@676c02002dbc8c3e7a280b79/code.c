@@ -11,7 +11,7 @@ int main(){
     }
     int e = 0;
     for(int i = 0;i<a;i++) {
-        if(myarr[i] == 1) {
+        if(myarray[i] == 1) {
             e++;
         }
     }

@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-typedef student struct {
+typedef struct student {
     int rollnumber;
     char name[100];
     float marks;

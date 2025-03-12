@@ -18,7 +18,7 @@ int main() {
             }
         }
     }
-    if (first > second) printf("%d %d", first, second);
-    else printf("%d %d", second, first);
+    if (first > second) printf("%d %d", second, first);
+    else printf("%d %d", first, second);
 
 }

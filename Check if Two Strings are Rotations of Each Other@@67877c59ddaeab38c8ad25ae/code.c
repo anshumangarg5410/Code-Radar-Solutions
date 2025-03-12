@@ -15,7 +15,7 @@ void rotate(char arr[], int n){
 
 int main () { 
     char mystr[100];
-    scanf("%s", givenrotstr);
+    scanf("%s", mystr);
     int len = strlen(mystr);
     char givenrotstr[100];
     scanf("%s", givenrotstr);

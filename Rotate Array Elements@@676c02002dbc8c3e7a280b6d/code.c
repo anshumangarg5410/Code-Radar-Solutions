@@ -19,7 +19,7 @@ int main(){
     scanf("%d", &a);
     int *myar = malloc(a * sizeof(int));
     for(int i = 0; i<a; i++){
-        scanf("%d", &myarray[i]);
+        scanf("%d", &myar[i]);
     }
     int count;
     scanf("%d", &count);

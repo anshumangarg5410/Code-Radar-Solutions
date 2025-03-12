@@ -11,8 +11,7 @@ typedef struct student {
 char gradecheck(float marks){
     if (marks >= 85.00) return 'A';
     else if (marks >= 70.00 && marks <= 84.00) return 'B';
-    else if (marks < 70.00) return 'C';
-    else return;
+    else return 'C';
 }
 
 int main(){

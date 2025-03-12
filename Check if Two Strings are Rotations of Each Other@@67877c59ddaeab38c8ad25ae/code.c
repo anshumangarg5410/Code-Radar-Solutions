@@ -25,10 +25,10 @@ int main () {
         for(int i =0;i<len;i++){
             printf("%c", mystr[i]);
         }
-        if (strcmp(mystr, givenrotstr) == 0){
-            printf("Yes");
-            return 0;
-        }
+        // if (strcmp(mystr, givenrotstr) == 0){
+        //     printf("Yes");
+        //     return 0;
+        // }
         }
     printf("No");
 }

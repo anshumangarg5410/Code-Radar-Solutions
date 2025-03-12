@@ -4,7 +4,7 @@
 
 typedef struct temp {
     char name[100];
-    int temp;
+    float temp;
 } temp;
 
 int main(){
@@ -18,6 +18,7 @@ int main(){
     for (int i =0; i<a; i++){
         summ += s[i].temp;
     }
-    printf("Average Tempreature: %d", summ/a);
+    float averagee = ((float)summ)/a;
+    printf("Average Tempreature: %.2f", averagee);
 
 }

@@ -13,7 +13,7 @@ int main(){
     scanf("%d", &a);
     student s[a];
     for(int i = 0; i<a; i++){
-        scanf("%d %s %f", &s[i].rollnumber, &s[i].name, &s[i].student);
+        scanf("%d %s %f", &s[i].rollnumber, &s[i].name, &s[i].marks);
     }
     float threshold;
     scanf("%f", &threshold);

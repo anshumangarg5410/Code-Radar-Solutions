@@ -2,8 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 //1,2,3,4,5
-
-//1,
+//5,1,2,3,4
 void rotate(int arr[], int n){
     int last = arr[n-1];int temp = arr[0];
     for(int i =1;i<n;i++){

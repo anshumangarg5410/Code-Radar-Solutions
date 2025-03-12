@@ -40,7 +40,7 @@ int main(){
             int e = 0;
             for(int i = minn;i<=maxx;i++) {
                 if(myarray[j] == i) {
-                    e ++;
+                    e++ ;
                 }
             }
             if(e == 0) {

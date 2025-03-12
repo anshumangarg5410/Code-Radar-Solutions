@@ -22,9 +22,9 @@ int main () {
     for (int i =0;i<len;i++){
         rotate(mystr, len);
         // printf("\n------\n");
-        for(int i =0;i<len;i++){
-            printf("%c", mystr[i]);
-        }
+        // for(int i =0;i<len;i++){
+        //     printf("%c", mystr[i]);
+        // }
         if (strcmp(mystr, givenrotstr) == 0){
             printf("Yes");
             return 0;

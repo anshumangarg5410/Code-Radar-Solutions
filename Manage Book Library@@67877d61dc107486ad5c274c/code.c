@@ -5,7 +5,7 @@
 typedef struct book{
     char name[100];
     char author[100];
-    int marks;
+    float marks;
 
 } book;
 
@@ -17,7 +17,7 @@ int main(){
         scanf("%s %s %d", &b[i].name, &b[i].author, &b[i].marks);
     }
     float target;
-    scanf("%f", &target);
+    scanf("%f", &target);   
     printf("Books above price %.2f:\n", target);
     for(int i =0; i<a; i++){
         if (b[i].marks > target) {

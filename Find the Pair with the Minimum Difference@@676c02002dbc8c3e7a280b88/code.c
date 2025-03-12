@@ -9,10 +9,10 @@ int main() {
         scanf("%d",&myarr[i]);
     }
     int diff = INT_MAX;
-    int first, second;
+    int first, second, summ;
     for(int i =0;i<a;i++){
         for(int j =i+1; j<a; j++){
-            int summ = abs(myarr[i] - myarr[j]);
+            summ = abs(myarr[i] - myarr[j]);
             if (summ < diff) {
                 first = myarr[i]; second = myarr[j];
                 printf("-- %d %d %d --\n", first, second, summ);

@@ -14,7 +14,7 @@ int main(){
     scanf("%d", &a);
     book b[a];
     for(int i =0; i<a; i++){
-        scanf("%s %s %d", &b[i].name, &b[i].author, &b[i].marks);
+        scanf("%s %s %f", &b[i].name, &b[i].author, &b[i].marks);
     }
     float target;
     scanf("%f", &target);   

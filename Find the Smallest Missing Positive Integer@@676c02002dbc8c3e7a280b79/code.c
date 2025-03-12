@@ -44,7 +44,7 @@ int main(){
                 }
             }
             if(e == 0) {
-                printf("%d",i);
+                printf("%d",j);
             }
         }
     }

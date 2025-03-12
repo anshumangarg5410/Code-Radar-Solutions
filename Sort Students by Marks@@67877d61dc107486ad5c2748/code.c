@@ -9,10 +9,11 @@ typedef struct student {
     float marks;
 } student;
 
-void bubblesort(struct student s[], int a){
-    for(int i =0; i<a; i++){
-        for(int j = 0; j<a-1; j++){
-            if (s[j].marks > s[j+1].marks) {
+void bubblesort(student s[], int a) {
+    for (int i = 0; i < a - 1; i++) {
+        for (int j = 0; j < a - i - 1; j++) {
+            if (s[j].marks > s[j + 1].marks) {
+                // Swap entire structure
                 student temp = s[j];
                 s[j] = s[j + 1];
                 s[j + 1] = temp;

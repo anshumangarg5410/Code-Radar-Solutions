@@ -15,10 +15,10 @@ void rotate(char arr[], int n){
 
 int main () { 
     char mystr[100];
-    fgets(mystr, 100, stdin);
+    scanf("%s", givenrotstr);
     int len = strlen(mystr);
     char givenrotstr[100];
-    scanf(" %s", givenrotstr);
+    scanf("%s", givenrotstr);
     for (int i =0;i<len;i++){
         rotate(mystr, len);
         printf("\n------\n");

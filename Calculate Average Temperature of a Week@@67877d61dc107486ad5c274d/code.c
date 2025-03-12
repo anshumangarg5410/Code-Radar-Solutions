@@ -10,7 +10,8 @@ typedef struct temp {
 int main(){
     int a;
     scanf("%d", &a);
-    temp s[a];
+    // temp s[a];
+    temp* s = (temp*)malloc(a * sizeof(temp));
     for(int i = 0; i<a; i++){
         scanf("%s %f", &s[i].name, &s[i].temp);
     }

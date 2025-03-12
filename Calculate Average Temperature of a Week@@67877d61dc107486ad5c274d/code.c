@@ -18,7 +18,7 @@ int main(){
     for (int i =0; i<a; i++){
         summ += s[i].temp;
     }
-    float averagee = ((float)summ)/a;
+    float averagee = (summ)/a;
     printf("Average Tempreature: %.2f", averagee);
 
 }

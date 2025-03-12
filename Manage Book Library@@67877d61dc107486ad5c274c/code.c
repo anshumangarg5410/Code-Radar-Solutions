@@ -18,9 +18,10 @@ int main(){
     }
     float target;
     scanf("%f", &target);
+    printg("Books above price %.2f:\n", target);
     for(int i =0; i<a; i++){
         if (b[i].marks > target) {
-            printf("Title: %s, Author: %s, Price: %d", b[i].name, b[i].author, b[i].marks);
+            printf("Title: %s, Author: %s, Price: %d\n", b[i].name, b[i].author, b[i].marks);
         }
 
     }

@@ -17,7 +17,7 @@ int main(){
     }
     for(int i =0; i<a; i++){
         if (!(s[i].marks > 50.00)) {
-            printf("Not all Passed");
+            printf("Not All Passed");
             return 0;
         }
     }

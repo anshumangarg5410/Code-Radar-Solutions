@@ -38,8 +38,10 @@ int main(){
         int minn = min(myarray,a);
         for(int j = 0;j<a;j++) {
             for(int i = minn;i<=maxx;i++) {
-                printf("%d", 5);
                 if(myarray[j] == i) {
+                    continue;
+                }
+                else {
                     printf("%d", i);
                     return 0;
                 }

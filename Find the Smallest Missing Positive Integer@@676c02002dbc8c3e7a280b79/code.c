@@ -10,14 +10,6 @@ int max(int arr[], int a){
     return max;
 }
 
-int min(int arr[], int a){
-    int min = arr[0];
-    for(int i =0; i<a; i++){
-        if (arr[i] < min) min = arr[i];
-    }
-    return min;
-}
-
 int main(){
     int a;
     scanf("%d", &a);
@@ -25,27 +17,19 @@ int main(){
     for(int i =0; i<a; i++){
         scanf("%d", &myarray[i]);
     }
-    int e = 0;
-    for(int i = 0;i<a;i++) {
-        if(myarray[i] == 1) {
-            e++;
-        }
-    }
-    if(e == 0) {
-        printf("1");
-    } else {
-        int maxx = max(myarray,a);
-        int minn = min(myarray,a);
-        for(int j = 0;j<a;j++) {
-            int e = 0;
-            for(int i = minn;i<=maxx;i++) {
-                if(myarray[j] == i) {
-                    e++ ;
-                }
-            }
-            if(e == 0) {
-                printf("%d",j);
+    int count = 1;
+    while(count != max(arr, a)){
+        int condition = 0;
+        for(int i =0; i<a; i++){
+            if (myarray[i] == count){
+                condition++;
             }
         }
+        if (condition == 0) {
+            printf("%d", count);
+            return 0;
+        }
+        count++;
     }
+
 }

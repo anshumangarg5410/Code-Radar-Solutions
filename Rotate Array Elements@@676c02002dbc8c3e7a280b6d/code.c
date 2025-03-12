@@ -9,7 +9,7 @@ void rotate(int arr[], int n){
             arr[0] = last;
         }
         else {
-            arr[i] = arr[i-1]
+            arr[i] = arr[i-1];
         }
     }
 }

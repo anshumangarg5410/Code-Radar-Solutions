@@ -35,7 +35,6 @@ int main(){
         printf("1");
         printf("\n");
     } else {
-        int minn = myarray[0];
         int maxx = max(myarray,a);
         int minn = min(myarray,a);
         for(int i = minn;i<maxx;i++) {

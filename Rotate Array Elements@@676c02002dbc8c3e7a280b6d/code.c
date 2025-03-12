@@ -1,16 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+//1,2,3,4,5,6
 
+//1,1,2,3,4,
 void rotate(int arr[], int n){
     int last = arr[n-1];
     for(int i =1;i<n;i++){
-        if (i == n-1){
-            arr[0] = last;
-        }
-        else {
-            arr[i] = arr[i-1];
-        }
+        arr[i] = arr[i-1];
+        if (i == n-1) arr[0] = last;
     }
 }
 

@@ -10,7 +10,7 @@ void rotate(char arr[], int n){
         arr[i] = temp;
         temp = tempp;
     }
-    arr[0] = last
+    arr[0] = temp;
 }
 
 int main () { 

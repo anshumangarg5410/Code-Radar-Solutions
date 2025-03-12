@@ -15,16 +15,18 @@ int main(){
     }
     scanf("%d", &target);
     int j = 0;
+    int result[2];
     for(int i =j+1; i<a; i++){
         if (sumchecker(myarray[j], myarray[i], target)) {
-            printf("%d %d\n", myarray[j], myarray[i]);
+            // printf("%d %d\n", myarray[j], myarray[i]);
+            result[0] = myarray[j]; result[1] = myarray[i];
         }
         if (j == a-1) break;
         if (i == a-1) {
             j++;
             i = j;
         }
-        
+        printf("%d %d\n", result[0], result[1]);
     }
 
 

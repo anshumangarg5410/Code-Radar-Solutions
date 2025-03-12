@@ -8,7 +8,7 @@ typedef struct temp {
 } temp;
 
 int main(){
-    int a;
+    float a;
     scanf("%d", &a);
     temp s[a];
     for(int i = 0; i<a; i++){

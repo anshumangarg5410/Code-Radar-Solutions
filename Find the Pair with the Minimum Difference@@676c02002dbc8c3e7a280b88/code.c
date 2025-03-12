@@ -15,7 +15,7 @@ int main() {
             int summ = abs(myarr[i] - myarr[j]);
             if (summ < diff) {
                 first = myarr[i]; second = myarr[j];
-                printf("-- %d %d %d --\n", first, second, summ)
+                printf("-- %d %d %d --\n", first, second, summ);
             }
         }
     }

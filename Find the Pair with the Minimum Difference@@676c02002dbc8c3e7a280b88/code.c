@@ -18,6 +18,12 @@ int main() {
                 first = myarr[i]; second = myarr[j];
                 // printf("-- %d %d %d --\n", first, second, summ);
             }
+            else if (summ == diff){
+                if ((myarr[i] + myarr[j]) < first + second) {
+                    first = myarr[i]; second = myarr[j];
+                    diff = summ;
+                }
+            }
         }
     }
     if (first > second) printf("%d %d", second, first);

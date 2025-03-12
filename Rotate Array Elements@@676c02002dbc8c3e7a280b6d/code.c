@@ -23,10 +23,9 @@ int main(){
     }
     int count;
     scanf("%d", &count);
-    // for(int i =0; i<count; i++){
-    //     rotate(myar, count);
-    // }
-    rotate(myar, a);
+    for(int i =0; i<count; i++){
+        rotate(myar, a);
+    }
     for(int i =0; i<a; i++){
         printf("%d\n", myar[i]);
     }

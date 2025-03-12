@@ -21,6 +21,10 @@ int main () {
     scanf(" %d", givenrotstr);
     for (int i =0;i<len;i++){
         rotate(mystr, len);
+        printf("------\n");
+        for(int i =0;i<a;i++){
+            printf("%c", mystr[i]);
+        }
         if (strcmp(mystr, givenrotstr) == 0){
             printf("Yes");
             return 0;

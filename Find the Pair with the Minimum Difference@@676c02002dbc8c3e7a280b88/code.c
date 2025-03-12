@@ -14,13 +14,13 @@ int main() {
         for(int j =i+1; j<a; j++){
             summ = abs(myarr[i] - myarr[j]);
             if (summ < diff) {
+                diff = summ;
                 first = myarr[i]; second = myarr[j];
-                printf("-- %d %d %d --\n", first, second, summ);
+                // printf("-- %d %d %d --\n", first, second, summ);
             }
         }
     }
-    printf("%d %d", first, second);
-    // if (first > second) printf("%d %d", second, first);
-    // else printf("%d %d", first, second);
+    if (first > second) printf("%d %d", second, first);
+    else printf("%d %d", first, second);
 
 }

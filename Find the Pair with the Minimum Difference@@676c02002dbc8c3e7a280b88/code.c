@@ -4,6 +4,7 @@
 int main() {
     int a;
     scanf("%d",&a);
+    if (a == 1) {printf("-1"); return 0;};
     int *myarr = malloc(a*(sizeof(int)));
     for(int i = 0;i<a;i++) {
         scanf("%d",&myarr[i]);

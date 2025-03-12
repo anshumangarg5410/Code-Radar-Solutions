@@ -6,12 +6,12 @@ int sumchecker(int a, int b, int target){
     else return 0;
 }
 
-int seenin(int arr[], int a, int first, int second){
-    for(int i =0; i<a-1; i++){
-        if (arr[i] == first && arr[i+1] == second) return 1;
-    }
+// int seenin(int arr[], int a, int first, int second){
+//     for(int i =0; i<a-1; i++){
+//         if (arr[i] == first && arr[i+1] == second) return 1;
+//     }
 
-}
+// }
 
 int main(){
     int a, target;
@@ -25,10 +25,10 @@ int main(){
     int result[100];
     int rescnt = 0;
     for(int i =j+1; i<a; i++){
-        int first, second;
         if (sumchecker(myarray[j], myarray[i], target)) {
-            // first = myarray[j]; second = myarray[i];
             printf("%d %d\n", myarray[j], myarray[i]);
+            if (myarray[j] == myarray[i]) return 0;
+            // first = myarray[j]; second = myarray[i];
             // if(!seenin(myarray, a, first, second)) {
             //     result[rescnt] = first; result[rescnt+1] = second;
             //     rescnt += 2;

@@ -37,14 +37,14 @@ int main(){
         int maxx = max(myarray,a);
         int minn = min(myarray,a);
         for(int j = 0;j<a;j++) {
+            int e = 0;
             for(int i = minn;i<=maxx;i++) {
                 if(myarray[j] == i) {
-                    continue;
+                    e ++;
                 }
-                else {
-                    printf("%d", i);
-                    return 0;
-                }
+            }
+            if(e == 0) {
+                printf("%d",i);
             }
         }
     }

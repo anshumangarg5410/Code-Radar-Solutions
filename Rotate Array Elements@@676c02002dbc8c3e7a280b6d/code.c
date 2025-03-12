@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-//1,2,3,4,5,6
+//1,2,3,4,5
 
-//1,1,2,3,4,
+//5,1,2,3,4
 void rotate(int arr[], int n){
     int last = arr[n-1];
     for(int i =1;i<n;i++){
@@ -24,7 +24,7 @@ int main(){
     // for(int i =0; i<count; i++){
     //     rotate(myar, count);
     // }
-    rotate(myar, count);
+    rotate(myar, a);
     for(int i =0; i<a; i++){
         printf("%d\n", myar[i]);
     }

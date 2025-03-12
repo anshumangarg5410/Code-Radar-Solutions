@@ -19,13 +19,14 @@ int main () {
     int len = strlen(mystr);
     char givenrotstr[100];
     scanf(" %d", givenrotstr);
-    rotate(mystr, len);
-    if (strcmp(mystr, givenrotstr) == 0){
-        printf("Yes");
-        return 0;
+    for (int i =0;i<len;i++){
+        rotate(mystr, len);
+        if (strcmp(mystr, givenrotstr) == 0){
+            printf("Yes");
+            return 0;
+        }
+        }
     }
-    else {
-        printf("No");
-        return 0;
-    }
+    printf("No");
+
 }

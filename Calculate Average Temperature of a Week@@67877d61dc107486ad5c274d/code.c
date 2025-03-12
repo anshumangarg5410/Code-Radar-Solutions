@@ -4,17 +4,17 @@
 
 typedef struct temp {
     char name[100];
-    float temp;
+    int temp;
 } temp;
 
 int main(){
-    float a;
+    int a;
     scanf("%d", &a);
     temp s[a];
     for(int i = 0; i<a; i++){
         scanf("%s %f", &s[i].name, &s[i].temp);
     }
-    float summ = 0;
+    int summ = 0;
     for (int i =0; i<a; i++){
         summ += s[i].temp;
     }

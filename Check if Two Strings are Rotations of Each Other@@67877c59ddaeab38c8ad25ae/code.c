@@ -21,7 +21,7 @@ int main () {
     scanf(" %d", givenrotstr);
     for (int i =0;i<len;i++){
         rotate(mystr, len);
-        printf("------\n");
+        printf("\n------\n");
         for(int i =0;i<len;i++){
             printf("%c", mystr[i]);
         }

@@ -29,7 +29,7 @@ int main(){
         if (sumchecker(myarray[j], myarray[i], target)) {
             first = myarray[j]; second = myarray[i];
             // printf("%d %d\n", myarray[j], myarray[i]);
-            if(!seenin(arr, a, first, second)) {
+            if(!seenin(myarray, a, first, second)) {
                 result[rescnt] = first; result[rescnt+1] = second;
                 rescnt += 2;
             }

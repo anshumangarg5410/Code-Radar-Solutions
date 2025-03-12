@@ -18,6 +18,6 @@ int main(){
         summ += s[i].temp;
     }
     float averagee = (summ)/a;
-    printf("Average Tempreature: %.2f", averagee);
+    printf("Average Temprature: %.2f", averagee);
 
 }

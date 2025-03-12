@@ -3,11 +3,13 @@
 #include<string.h>
 //1,2,3,4,5
 
-//5,1,2,3,4
+//1,
 void rotate(int arr[], int n){
-    int last = arr[n-1];
+    int last = arr[n-1];int temp = arr[0]
     for(int i =1;i<n;i++){
-        arr[i] = arr[i-1];
+        int tempp = arr[i]
+        arr[i] = temp;
+        temp = tempp;
         if (i == n-1) arr[0] = last;
     }
 }

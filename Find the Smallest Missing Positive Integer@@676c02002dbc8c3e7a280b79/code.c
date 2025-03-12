@@ -18,7 +18,7 @@ int main(){
         scanf("%d", &myarray[i]);
     }
     int count = 1; int maxx = max(myarray, a) + 1;
-    printf("%d", maxx);
+    printf("%dhh", maxx);
     while(count != maxx){
         int condition = 0;
         for(int i =0; i<a; i++){

@@ -4,7 +4,7 @@
 
 void rotate(int arr[], int n){
     int last = arr[n-1];
-    for(int i =1;i<a;i++){
+    for(int i =1;i<n;i++){
         if (i == n-1){
             arr[0] = last;
         }

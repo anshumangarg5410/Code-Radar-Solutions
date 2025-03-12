@@ -39,6 +39,7 @@ int main(){
         printf("%d %d", maxx, minn);
         for(int j = 0;j<a;j++) {
             for(int i = minn;i<=maxx;i++) {
+                printf("%d", 5);
                 if(myarray[j] == i) {
                     printf("%d", i);
                     return 0;

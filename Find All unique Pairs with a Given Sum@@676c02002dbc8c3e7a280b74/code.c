@@ -6,6 +6,13 @@ int sumchecker(int a, int b, int target){
     else return 0;
 }
 
+int seenin(int arr[], int a, int first, int second){
+    for(int i =0; i<a; i++){
+        if (arr[i] == first && arr[i+1] == second) return 1;
+    }
+
+}
+
 int main(){
     int a, target;
     scanf("%d", &a);
@@ -17,16 +24,18 @@ int main(){
     int j = 0;
     int result[2];
     for(int i =j+1; i<a; i++){
+        int first, second;
         if (sumchecker(myarray[j], myarray[i], target)) {
-            // printf("%d %d\n", myarray[j], myarray[i]);
-            result[0] = myarray[j]; result[1] = myarray[i];
+            printf("%d %d\n", myarray[j], myarray[i]);
+
+            // result[0] = first; result[1] = second;
         }
         if (j == a-1) break;
         if (i == a-1) {
             j++;
             i = j;
         }
-        printf("%d %d\n", result[0], result[1]);
+        
     }
 
 

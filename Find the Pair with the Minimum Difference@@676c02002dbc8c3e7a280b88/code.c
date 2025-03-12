@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include<limit.h>
+#include<limits.h>
 int main() {
     int a;
     scanf("%d",&a);

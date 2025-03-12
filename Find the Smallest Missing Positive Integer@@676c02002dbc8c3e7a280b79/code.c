@@ -37,8 +37,8 @@ int main(){
         int maxx = max(myarray,a);
         int minn = min(myarray,a);
         printf("%d %d", maxx, minn);
-        for(int i = minn;i<maxx;i++) {
-            for(int j = 0;j<a;j++) {
+        for(int j = 0;j<a;j++) {
+            for(int i = minn;i<=maxx;i++) {
                 if(myarray[j] == i) {
                     printf("%d", i);
                     return 0;

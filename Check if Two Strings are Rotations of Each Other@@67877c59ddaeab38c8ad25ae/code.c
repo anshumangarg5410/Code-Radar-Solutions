@@ -18,7 +18,7 @@ int main () {
     fgets(mystr, 100, stdin);
     int len = strlen(mystr);
     char givenrotstr[100];
-    scanf(" %d", givenrotstr);
+    scanf(" %c", givenrotstr);
     for (int i =0;i<len;i++){
         rotate(mystr, len);
         printf("\n------\n");

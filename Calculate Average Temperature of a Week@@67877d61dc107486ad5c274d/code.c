@@ -10,11 +10,11 @@ typedef struct temp {
 int main(){
     int a;
     scanf("%d", &a);
-    student s[a];
+    temp s[a];
     for(int i = 0; i<a; i++){
         scanf("%s %f", &s[i].name, &s[i].temp);
     }
-    int summ = 0;
+    float summ = 0;
     for (int i =0; i<a; i++){
         summ += s[i].temp;
     }

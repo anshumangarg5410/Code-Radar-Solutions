@@ -33,10 +33,10 @@ int main(){
     }
     if(e == 0) {
         printf("1");
-        printf("\n");
     } else {
         int maxx = max(myarray,a);
         int minn = min(myarray,a);
+        printf("%d %d", maxx, minn);
         for(int i = minn;i<maxx;i++) {
             for(int j = 0;j<a;j++) {
                 if(myarray[j] == i) {

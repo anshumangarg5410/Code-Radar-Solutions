@@ -29,9 +29,13 @@ void leftshift(char myar[], int n, int index){
 
 void removespace(char myar[], int n){
     for(int i =0;i<n;i++){
+        
         if (myar[i] == ' '){
             leftshift(myar, n, i);
             i = i-1;
+        }
+        else {
+            myar[i] = tolower(myar[i]);
         }
     }
 }

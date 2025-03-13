@@ -22,7 +22,7 @@ int main(){
     strcpy(copyarr, arr);
     fgets(arr, 100, stdin);
     int len = strlen(arr);
-    int j =0
+    int j =0;
     for(int i =0; i<len; i++){
         if (!vowelcheck(copyarr[j])) {
             leftshift(arr, len, j);

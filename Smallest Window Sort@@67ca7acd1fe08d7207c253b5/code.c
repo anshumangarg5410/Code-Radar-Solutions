@@ -10,7 +10,6 @@ int findUnsortedSubarray(int arr[], int size){
                 break;
             }
         }
-        
         else {
             if (arr[i] < arr[i-1] || arr[i] > arr[i+1]) {
                 first = i;
@@ -18,7 +17,6 @@ int findUnsortedSubarray(int arr[], int size){
             }
         }
     }
-
     for (int i =size-1; i>0; i--){
         if (i == size-1){
             if (arr[i] < arr[i-1]){
@@ -33,7 +31,7 @@ int findUnsortedSubarray(int arr[], int size){
             }
         }
     }
-    // printf("\n%d %d %d %d\n", first, last, arr[first], arr[last]);
+    printf("\n%d %d %d %d\n", first, last, arr[first], arr[last]);
     int result = abs(first - last);
     if (result == 0) return result;
     else return (result + 1);

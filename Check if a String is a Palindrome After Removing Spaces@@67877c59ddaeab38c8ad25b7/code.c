@@ -50,8 +50,8 @@ int main(){
     int newlen = strlen(reversed);
     reverse(reversed, newlen);
     int lenrev = strlen(reversed);
-    printf("%s\n", origspaceremoved);
-    printf("%s\n", reversed);
+    // printf("%s\n", origspaceremoved);
+    // printf("%s\n", reversed);
     if (strcmp(origspaceremoved, reversed) == 0) printf("Yes");
     else printf("No");
 

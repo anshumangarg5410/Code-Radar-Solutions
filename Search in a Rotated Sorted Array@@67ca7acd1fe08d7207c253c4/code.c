@@ -2,6 +2,16 @@
 #include<stdlib.h>
 #include<string.h>
 
+
+
+int searchInRotatedArray(int arr[], int a, int target){
+    for(int i =0; i<a; i++){
+        if (arr[i] == target){
+            return i;
+        }
+    }
+    return -1;
+}
 int main(){
     int a;
     scanf("%d", &a);
@@ -11,12 +21,6 @@ int main(){
     }
     int target;
     scanf("%d", &target);
-    for(int i =0; i<a; i++){
-        if (arr[i] == target){
-            printf("%d", i);
-            return 0;
-        }
-    }
-    printf("-1");
+
     
 }

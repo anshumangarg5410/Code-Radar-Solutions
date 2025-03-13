@@ -45,5 +45,6 @@ int main() {
     char str[100];
     scanf("%s", str); // Input string
     printf("%d\n", countDistinctSubstrings(str));
+    printf("NOOO");
     return 0;
 }

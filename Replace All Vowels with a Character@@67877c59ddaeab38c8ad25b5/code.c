@@ -14,6 +14,7 @@ int main(){
     char myar[100];
     scanf("%s", myar);
     int len = strlen(myar);
+    getchar();
     char ele;
     scanf("%c", &ele);
     for(int i =0; i<len; i++){

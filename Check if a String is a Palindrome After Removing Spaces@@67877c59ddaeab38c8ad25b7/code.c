@@ -45,7 +45,7 @@ int main(){
 
     strcpy(reversed, mystr); 
     removespace(reversed, len);
-    printf("%s", reversed);
+    int lenrev = strlen(reversed);
     if (strcmp(mystr, reversed) == 0) printf("Yes");
     else printf("No");
 

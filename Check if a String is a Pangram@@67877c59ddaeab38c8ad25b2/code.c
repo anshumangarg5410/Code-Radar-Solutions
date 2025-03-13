@@ -32,37 +32,35 @@
 // }
 
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 
-int unique(char target) {
-    char alphabet[52]; // 26 lowercase + 26 uppercase = 52
-    for (int i = 0; i < 26; i++) {
-        alphabet[i] = 'a' + i;        // Fill lowercase letters
-        alphabet[i + 26] = 'A' + i;   // Fill uppercase letters
+int is_present(char c, char input[]) {
+    int len = strlen(input);
+    for (int i = 0; i < len; i++) {
+        if (tolower(input[i]) == tolower(c)) {
+            return 1;  // found the letter
+        }
     }
-
-    // Check if target exists in the alphabet array
-    for (int i = 0; i < 52; i++) {
-        if (alphabet[i] == target)
-            return 1;  // Found, it's an alphabet
-    }
-    return 0;  // Not found
+    return 0;  // not found
 }
 
 int main() {
-    char myar[100];
-    fgets(myar, 100, stdin);  // Read entire line (including spaces)
+    char myar[1000];
+    fgets(myar, 1000, stdin);
+    myar[strcspn(myar, "\n")] = '\0';  // Remove newline
 
-    myar[strcspn(myar, "\n")] = '\0';  // Remove newline if present
+    char alphabet[26];
+    for (int i = 0; i < 26; i++) {
+        alphabet[i] = 'a' + i;
+    }
 
-    int len = strlen(myar);
-    for (int i = 0; i < len; i++) {
-        if (!unique(myar[i])) {
-            printf("No");
+    for (int i = 0; i < 26; i++) {
+        if (!is_present(alphabet[i], myar)) {
+            printf("No\n");
             return 0;
         }
     }
-    printf("Yes");
-    return 0;
+
+    printf("Yess\n");
 }

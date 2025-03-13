@@ -25,11 +25,11 @@ int main(){
     int len = strlen(mystr);
     char seenin[100]; int countt = 0;
     for(int i = 0; i<len; i++){
-        if (!(seeenin(mystr, seenin, len, countt))) printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));
-        else {
+        if (!(seeenin(mystr, seenin, len, countt))) {
+            printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));
             seenin[countt++] = mystr[i];
             seenin[countt] = '\0';
-        }
+            }
         
     }
 }

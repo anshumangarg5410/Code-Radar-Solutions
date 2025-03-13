@@ -8,11 +8,11 @@ void insertionSort(char arr[][100], int n) {
         strcpy(key, arr[i]); j = i-1;
         while (j >= 0 && (strcmp(arr[j], key) > 0)){
             strcpy(arr[j], arr[j+1]);
-            arr[j+1] = arr[j];
+            // arr[j+1] = arr[j];
             j--;
         }
         strcpy(arr[j+1], key)
-        arr[j+1] = key;
+        // arr[j+1] = key;
     }
 }
 

@@ -25,7 +25,7 @@ int main() {
             temp[k] = '\0';    
             if (k >= 2 && palindrome(temp, k)) {
                 strcpy(plain[count], temp);  
-                printf("\n##%s##\n", temp);  
+                // printf("\n##%s##\n", temp);  
                 count++;           
             }
         }
@@ -33,10 +33,10 @@ int main() {
     int templen = n;
     for(int i =0; i<count; i++){
         for(int j = 0; j<count; j++){
-            printf("\n__%s__\n", plain[j]);
+            printf("%s", plain[j]);
             if (strlen(plain[j]) == templen) {
-                printf("\n--%s--\n", plain[j]);
-                // return 0;
+                printf("%s", plain[j]);
+                return 0;
             }
         }
         templen--;

@@ -20,7 +20,7 @@ int findUnsortedSubarray(int arr[], int size){
         copiedar[i] = arr[i];
     }
     bubbleSort(copiedar, size);
-    int first, last;
+    int first = 0, last=0;
     for(int i = 0; i<size; i++){
         if (arr[i] != copiedar[i]) {
             first = i;

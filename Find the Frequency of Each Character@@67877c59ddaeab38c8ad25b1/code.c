@@ -12,7 +12,7 @@ int count(char myar[], int n, char target){
 
 int main(){
     char mystr[100];
-    scanf("%d", mystr);
+    scanf("%s", mystr);
     int len = strlen(mystr);
     for(int i = 0; i<len; i++){
         printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));

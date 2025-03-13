@@ -25,7 +25,7 @@ int main() {
             temp[k] = '\0';    
             if (k >= 2 && palindrome(temp, k)) {
                 strcpy(plain[count], temp);  
-                // printf("%s\n", temp);  
+                printf("\n##%s##\n", temp);  
                 count++;           
             }
         }

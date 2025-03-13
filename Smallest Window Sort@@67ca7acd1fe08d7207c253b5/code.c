@@ -42,7 +42,9 @@ int findUnsortedSubarray(int arr[], int size){
     //     printf("%d ", copiedar[i]);
     // }
     // printf("----\n");
-    return abs(first - last) + 1;
+    int result = abs(first - last);
+    if (result == 0) return 0;
+    else return abs(first - last) + 1;
 }
 
 

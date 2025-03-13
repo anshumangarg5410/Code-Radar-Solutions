@@ -15,6 +15,7 @@ int palindrome(char mystr[], int n){
 int main(){
     char mystr[100];
     scanf("%s", mystr);
+    int n = strlen(mystr);
     for(int i =0 ;i<n; i++){
         int k =1;
         char temp[100];

@@ -19,7 +19,7 @@ int main(){
     int maxxi = strlen(inputstr); char result[100];
     for(int i =0;i<word;i++){
         if(strlen(mystr[i]) < maxxi){
-            strcpy(mystr[i], result);
+            strcpy(result, mystr[i]);
             maxxi = strlen(mystr[i]);
         }
     }

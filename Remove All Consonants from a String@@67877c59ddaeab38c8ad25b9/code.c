@@ -18,13 +18,13 @@ int vowelcheck(char target){
 }
 
 int main(){
-    char arr[100];
+    char arr[100]; char copyarr[100];
+    strcpy(copyarr, arr);
     fgets(arr, 100, stdin);
     int len = strlen(arr);
     for(int i =0; i<len; i++){
-        if (!vowelcheck(arr[i])) {
+        if (!vowelcheck(copyarr[i])) {
             leftshift(arr, len, i);
-            i = i-1;
         }
     }
     printf("%s", arr);

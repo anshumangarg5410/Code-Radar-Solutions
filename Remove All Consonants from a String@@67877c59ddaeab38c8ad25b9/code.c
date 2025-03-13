@@ -24,7 +24,7 @@ int main(){
     int len = strlen(arr);
     int j =0;
     for(int i =0; i<len; i++){
-        if (!vowelcheck(copyarr[j])) {
+        if (!vowelcheck(arr[j])) {
             leftshift(arr, len, j);
         }
         else j++;

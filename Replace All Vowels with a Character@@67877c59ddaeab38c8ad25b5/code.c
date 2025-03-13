@@ -12,8 +12,7 @@ int find(char myar[], int a, char target){
 
 int main(){
     char myar[100];
-    scanf("%d", myar);
-    printf("%s", myar);
+    scanf("%s", myar);
     int len = strlen(myar);
     char ele;
     scanf("%c", &ele);

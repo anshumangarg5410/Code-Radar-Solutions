@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<ctype.h>
 
 void leftshift(char myar[], int n, int index){
     for(int i =index; i<n-1; i++){
@@ -24,7 +25,7 @@ int main(){
     int len = strlen(arr);
     int j =0;
     for(int i =0; i<len; i++){
-        if (!vowelcheck(arr[j]) && arr[j] != ' ') {
+        if (!vowelcheck(arr[j]) && arr[j] != ' ' && !isdigit(arr[j])) {
             leftshift(arr, len, j);
         }
         else j++;

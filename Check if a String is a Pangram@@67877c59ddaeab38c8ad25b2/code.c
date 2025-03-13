@@ -10,7 +10,7 @@ int unique(char target, int a){
         alphabet[i + 26] = 'A' + i;  
     }
     for(int i = 0;i<a; i++){
-        if (alpha[i] == target) count++;
+        if (alphabet[i] == target) count++;
     }
     if (count >= 1) return 1;
     else return 0;

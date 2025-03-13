@@ -18,7 +18,6 @@ int main(){
     for(int i =0 ;i<n; i++){
         int k =1;
         char temp[100];
-        temp[0] = mystr[i];
         for(int  j =i; j<n; j++){
             temp[k] = mystr[j];
             if (palindrome(temp, k+1)) {

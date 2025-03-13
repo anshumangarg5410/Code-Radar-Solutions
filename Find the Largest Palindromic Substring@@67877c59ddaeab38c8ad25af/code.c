@@ -16,9 +16,9 @@ int main() {
     char mystr[100];
     scanf("%s", mystr);       
     int n = strlen(mystr);
-    int count = 0;
+    int count = 0;char plain[100][100];
     for (int i = 0; i < n; i++) {
-        char temp[100]; char plain[100][100];
+        char temp[100]; 
         int k = 0; 
         for (int j = i; j < n; j++) {
             temp[k++] = mystr[j];

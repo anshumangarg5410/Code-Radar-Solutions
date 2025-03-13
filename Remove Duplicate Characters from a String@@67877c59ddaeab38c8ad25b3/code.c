@@ -9,7 +9,7 @@ void leftshift(char myar[], int n, int index){
     myar[n-1] = '\0';
 }
 
-void unique(char myar[], int a, int target){
+int unique(char myar[], int a, int target){
     int count = 0;
     for(int i = 0;i<a; i++){
         if (myar[i] == target) count++;

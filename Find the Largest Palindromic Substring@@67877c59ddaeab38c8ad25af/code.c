@@ -2,31 +2,12 @@
 #include<stdlib.h>
 #include<string.h>
 
-// int palindrome(char mystr[], int n){
-//     int j = 0; char rev[100];
-//     for(int i = n-1; i>=0;i++){
-//         rev[j] = mystr[i];
-//         j++;
-//     }
-//     if (strcmp(mystr, rev) == 0) return 1;
-//     else return 0;
-// }
-
 int palindrome(char mystr[], int n) {
     char rev[100];
-
-    // Create reversed string
-    for (int i = 0; i < n; i++) {
-        rev[i] = mystr[n - 1 - i];
-    }
-
-    rev[n] = '\0';      // ✅ Fix 1: Null-terminate the reversed string
-    mystr[n] = '\0';    // ✅ Fix 2: Temporarily null-terminate original substring
-
-    // Compare both strings
-    if (strcmp(mystr, rev) == 0)
-        return 1;
-    else
+    for (int i = 0; i < n; i++) rev[i] = mystr[n - 1 - i];
+    rev[n] = '\0';      
+    mystr[n] = '\0';    
+    if (strcmp(mystr, rev) == 0) return 1
         return 0;
 }
 

@@ -24,6 +24,7 @@ int main(){
     for(int i =0; i<len; i++){
         if (!vowelcheck(arr[i])) {
             leftshift(arr, len, i);
+            i = i-1;
         }
     }
     printf("%s", arr);

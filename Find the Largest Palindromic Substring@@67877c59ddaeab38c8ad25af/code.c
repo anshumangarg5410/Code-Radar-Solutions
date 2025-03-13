@@ -33,7 +33,7 @@ int main() {
     int templen = n;
     for(int i =0; i<count; i++){
         for(int j = 0; j<count; j++){
-            printf("%s", plain[j]);
+            // printf("%s", plain[j]);
             if (strlen(plain[j]) == templen) {
                 printf("%s", plain[j]);
                 return 0;

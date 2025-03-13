@@ -15,7 +15,7 @@ void reverse(char mystr[], int start, int end) {
 int main(){
     char mystr[100];
     fgets(mystr, 100, stdin);
-    str[strcspn(mystr, "\n")] = '\0';
+    mystr[strcspn(mystr, "\n")] = '\0';
     int i = 0; int start = 0;
     while (mystr[i] != '\0'){
         if (mystr[i] == ' '){

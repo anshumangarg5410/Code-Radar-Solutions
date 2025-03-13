@@ -23,12 +23,12 @@ int main(){
     char mystr[100];
     scanf("%s", mystr);
     int len = strlen(mystr);
-    char seenin[100]; int count = 0;
+    char seenin[100]; int countt = 0;
     for(int i = 0; i<len; i++){
-        if (!(seeenin(mystr, seenin, len, count))) printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));
+        if (!(seeenin(mystr, seenin, len, countt))) printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));
         else {
-            seenin[count++] = mystr[i];
-            seenin[count] = '\0';
+            seenin[countt++] = mystr[i];
+            seenin[countt] = '\0';
         }
         
     }

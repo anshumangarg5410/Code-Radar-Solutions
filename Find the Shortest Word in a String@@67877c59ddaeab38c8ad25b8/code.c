@@ -16,8 +16,9 @@ int main(){
         strcpy(mystr[i], tok);
         tok = strtok(NULL, " \n");
     }
-    int maxxi = strlen(inputstr); char result[100];
-    for(int i =0;i<word;i++){
+    int maxxi = strlen(mystr[0]); char result[100];
+    strcpy(result, mystr[0]);
+    for(int i =1;i<word;i++){
         if(strlen(mystr[i]) < maxxi){
             strcpy(result, mystr[i]);
             maxxi = strlen(mystr[i]);

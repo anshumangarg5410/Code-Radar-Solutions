@@ -42,4 +42,5 @@ int main() {
         }
         templen = templen - 1;
     }
+    printf("%c", mystr[0]);
 }

@@ -29,5 +29,14 @@ int main() {
             }
         }
     }
-    printf("%c", mystr[0]);
+    int templen = n;
+    for(int i =0; i<count; i++){
+        for(int j = 0; j<count; j++){
+            if (strlen(plain[j]) == templen) {
+                printf("%s", plain[j]);
+                return 0;
+            }
+        }
+        templen--;
+    }
 }

@@ -24,21 +24,22 @@ int main() {
             temp[k++] = mystr[j];
             temp[k] = '\0';    
             if (k >= 2 && palindrome(temp, k)) {
-                strcpy(plain[count], temp);  
+                strcpy(plain[count], temp); 
+                printf("%s %d", temp, strlen(temp)); 
                 // printf("\n##%s##\n", temp);  
                 count++;           
             }
         }
     }
-    int templen = n;
-    for(int i =0; i<count; i++){
-        for(int j = 0; j<count; j++){
-            // printf("%s", plain[j]);
-            if (strlen(plain[j]) == templen) {
-                printf("%s", plain[j]);
-                return 0;
-            }
-        }
-        templen--;
-    }
+    // int templen = n;
+    // for(int i =0; i<count; i++){
+    //     for(int j = 0; j<count; j++){
+    //         // printf("%s", plain[j]);
+    //         if (strlen(plain[j]) == templen) {
+    //             printf("%s", plain[j]);
+    //             return 0;
+    //         }
+    //     }
+    //     templen--;
+    // }
 }

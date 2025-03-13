@@ -25,7 +25,7 @@ int main(){
     int len = strlen(mystr);
     char seenin[100]; int count = 0;
     for(int i = 0; i<len; i++){
-        if (!seenin(myar[], seenin[], len, count)) printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));
+        if (!seenin(mystr[], seenin[], len, count)) printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));
         else {
             seenin[count++] = mystr[i];
             seenin[count] = '\0';

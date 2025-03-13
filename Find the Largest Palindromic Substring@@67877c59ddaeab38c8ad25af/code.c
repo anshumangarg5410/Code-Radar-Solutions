@@ -2,7 +2,7 @@
 #include<stdlib.h>
 #include<string.h>
 
-void palindrome(char mystr[], int n){
+int palindrome(char mystr[], int n){
     int j = 0; char rev[100];
     for(int i = n-1; i>=0;i++){
         rev[j] = mystr[i];

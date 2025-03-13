@@ -5,8 +5,8 @@ int clearNthBit(int n, int pos) {
 }
 
 int main() {
-    int num = 13;  
-    int pos = 2;  
+    int num, pos;
+    scanf("%d %d", &num, &pos);  
     num = clearNthBit(num, pos);
     printf("%d", num);
 }

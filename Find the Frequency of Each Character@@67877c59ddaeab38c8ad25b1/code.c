@@ -19,7 +19,8 @@ int seeenin(char target, char seenin[], int a){
 
 int main(){
     char mystr[100];
-    scanf("%s", mystr);
+    fgets(mystr, 100, stdin);
+    mystr[strcspn(mystr, "\n")] = '\0'; 
     int len = strlen(mystr);
     char seenin[100]; int countt = 0;
     for(int i = 0; i<len; i++){

@@ -11,23 +11,23 @@ int palindrome(char mystr[], int n) {
         return 0;
 }
 
-int main(){
+
+int main() {
     char mystr[100];
-    scanf("%s", mystr);
+    scanf("%s", mystr);       
     int n = strlen(mystr);
-    for(int i =0 ;i<n; i++){
-        int k =1;
+    for (int i = 0; i < n; i++) {
         char temp[100];
-        temp[0] = mystr[i];
-        for(int  j =i+1; j<n; j++){
-            temp[k] = mystr[j];
-            if (palindrome(temp, k+1)) {
-                for(int o =0; o<k+1; o++){
-                    printf("%c", temp[o]);
-                }
+        int k = 0;
+        for (int j = i; j < n; j++) {
+            temp[k++] = mystr[j];
+            temp[k] = '\0';    
+            if (k >= 2 && palindrome(temp, k)) {  
+                printf("%s\n", temp);             
                 return 0;
             }
-            k++;
         }
     }
+    printf("No palindrome substring found.\n");
+    return 0;
 }

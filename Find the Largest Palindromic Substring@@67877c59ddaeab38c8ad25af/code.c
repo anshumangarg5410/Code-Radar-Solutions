@@ -28,6 +28,5 @@ int main() {
             }
         }
     }
-    printf("No palindrome substring found.\n");
     return 0;
 }

@@ -14,7 +14,7 @@ void bubbleSort(int arr[], int a){
 }
 
 int findUnsortedSubarray(int arr[], int size){
-    int copiedar[];
+    int copiedar[100];
     strcpy(copiedar, arr);
     bubbleSort(copiedar, size);
     int first, last;

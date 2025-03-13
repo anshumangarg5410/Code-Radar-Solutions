@@ -10,11 +10,9 @@ int count(char myar[], int n, char target){
     return count;
 }
 
-int seeenin(char myar[], char seenin[], int a, int n){
+int seeenin(char target, char seenin[], int a){
     for(int i =0; i<a; i++){
-        for(int j =0; j<n; j++){
-            if (myar[i] == seenin[j]) return 1;
-        }
+        if (seenin[i] == target) return 1;
     }
     return 0;
 }
@@ -25,7 +23,7 @@ int main(){
     int len = strlen(mystr);
     char seenin[100]; int countt = 0;
     for(int i = 0; i<len; i++){
-        if (!(seeenin(mystr, seenin, len, countt))) {
+        if (!(seeenin(mystr[i], seenin, countt))) {
             printf("%c: %d\n", mystr[i], count(mystr, len, mystr[i]));
             seenin[countt++] = mystr[i];
             seenin[countt] = '\0';

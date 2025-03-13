@@ -1,9 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int n;
+    int n, pos = 0;
     scanf("%d", &n);
-    int lsb = n & -n;  
-    printf("%d", lsb);
-    return 0;
+    while ((n & 1) == 0) {  
+        n >>= 1;  // Right shift to remove trailing 0s
+        pos++;
+    }
+    printf("%d", pos);
 }

@@ -44,7 +44,7 @@ int main(){
     char *reversed = malloc(len * sizeof(char));
 
     strcpy(reversed, mystr); 
-    removespace(myar, len);
+    removespace(reversed, len);
 
     if (strcmp(mystr, reversed) == 0) printf("Yes");
     else printf("No");

@@ -18,14 +18,16 @@ int main(){
     for(int i =0 ;i<n; i++){
         int k =1;
         char temp[100];
-        for(int  j =i; j<n; j++){
-            temp[k] = mystr[j];
+        temp[0] = mystr[i];
+        for(int  j =i+1; j<n; j++){
+            
             if (palindrome(temp, k+1)) {
                 for(int o =0; o<k+1; o++){
                     printf("%c", temp[o]);
                 }
                 return 0;
             }
+            temp[k] = mystr[j];
             k++;
         }
     }

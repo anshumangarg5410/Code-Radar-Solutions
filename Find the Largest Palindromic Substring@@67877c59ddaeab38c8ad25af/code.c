@@ -30,7 +30,7 @@ int main() {
             }
         }
     }
-    int templen = n;
+    int templen = n-1;
     for(int i =0; i<count; i++){
         for(int j = 0;j<count; j++){
             int strlenn = strlen(plain[j]);

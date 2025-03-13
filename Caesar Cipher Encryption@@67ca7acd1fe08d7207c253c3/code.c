@@ -1,6 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
+#include<ctype.h>
 
 void caesarCipher(char message[], int shift, char result[]){
     int len = strlen(message);

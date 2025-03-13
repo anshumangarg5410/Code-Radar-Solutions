@@ -47,6 +47,7 @@ int main(){
     removespace(origspaceremoved, len);
     strcpy(reversed, mystr); 
     removespace(reversed, len);
+    reverse(reversed, len);
     int lenrev = strlen(reversed);
     printf("%s\n", origspaceremoved);
     printf("%s\n", reversed);

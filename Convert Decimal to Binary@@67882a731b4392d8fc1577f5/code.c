@@ -20,6 +20,4 @@ int main() {
     int num;
     scanf("%d", &num);
     printBinary(num);
-
-    return 0;
 }

@@ -35,7 +35,7 @@ int main() {
         for(int j = 0;j<count; j++){
             int strlenn = strlen(plain[j]);
             printf("%s %d %d\n",plain[j], strlenn, templen );
-            if (strlenn = templen){
+            if (strlenn == templen){
                 printf("\n--%s--, %d %d\n", plain[j], strlenn, templen);
                 return 0;
             }

@@ -4,11 +4,12 @@
 
 int unique(char target, int a){
     int count = 0;
-    char alphabet[52];
+    char alphabet[53];
     for (int i = 0; i < 26; i++) {
         alphabet[i] = 'a' + i;       
         alphabet[i + 26] = 'A' + i;  
     }
+    alphabet[53] = ' '; 
     for(int i = 0;i<a; i++){
         if (alphabet[i] == target) count++;
     }

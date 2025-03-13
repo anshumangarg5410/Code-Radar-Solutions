@@ -36,7 +36,7 @@ int main() {
             printf("\n__%s__\n", plain[j]);
             if (strlen(plain[j]) == templen) {
                 printf("\n--%s--\n", plain[j]);
-                return 0;
+                // return 0;
             }
         }
         templen--;

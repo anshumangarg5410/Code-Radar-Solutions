@@ -2,26 +2,24 @@
 #include<stdlib.h>
 #include<string.h>
 
-
-int repcheck(char arr[], int n, char target){
+int unique(char myar[], int a, int target){
     int count = 0;
-    for(int i =0; i<n; i++){
-        if (arr[i] == target) count++;
+    for(int i = 0;i<a; i++){
+        if (myar[i] == target) count++;
     }
-    return count;
+    if (count == 1) return 1;
+    else return 0;
 }
 
 int main(){
-    char mystr[100];
-    fgets(mystr, 100, stdin);
-    int len = strlen(mystr);
+    char myar[100];
+    fgets(myar, 100, stdin);
+    myar[strcspn(myar, "\n")] = '\0';
+    int len = strlen(myar);
     for(int i =0; i<len; i++){
-        if (repcheck(mystr, len, mystr[i]) == 1) {
-            printf("%c", mystr[i]);
-            return 1;
+        if (unique(myar, len, myar[i])){
+            printf("%c", myar[i]);
+            return 0;
         }
     }
-    printf("-");
-    return 0;
-
 }

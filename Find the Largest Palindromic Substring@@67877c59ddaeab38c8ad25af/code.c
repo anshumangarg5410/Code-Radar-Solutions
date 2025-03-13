@@ -21,15 +21,12 @@ int main(){
         temp[0] = mystr[i];
         for(int  j =i+1; j<n; j++){
             temp[k] = mystr[j];
-            if (temp[k] != mystr[j]){
-                if (palindrome(temp, k+1)) {
-                    for(int o =0; o<k+1; o++){
-                        printf("%c", temp[o]);
-                    }
-                    return 0;
+            if (palindrome(temp, k+1)) {
+                for(int o =0; o<k+1; o++){
+                    printf("%c", temp[o]);
                 }
+                return 0;
             }
-           
             k++;
         }
     }

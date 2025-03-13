@@ -24,6 +24,6 @@ int main(){
         }
         i++;
     }
-    reverse(str, start, i - 1);
+    reverse(mystr, start, i - 1);
     printf("%s", mystr);
 }

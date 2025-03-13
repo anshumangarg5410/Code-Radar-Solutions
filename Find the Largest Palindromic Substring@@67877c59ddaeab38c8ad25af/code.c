@@ -7,7 +7,7 @@ int palindrome(char mystr[], int n) {
     for (int i = 0; i < n; i++) rev[i] = mystr[n - 1 - i];
     rev[n] = '\0';      
     mystr[n] = '\0';    
-    if (strcmp(mystr, rev) == 0) return 1
+    if (strcmp(mystr, rev) == 0) return 1;
         return 0;
 }
 

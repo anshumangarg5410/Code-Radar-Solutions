@@ -31,6 +31,6 @@ int main() {
         }
     }
     for(int i =0; i<count; i++){
-        printf("%s", plain[i]);
+        printf("%s\n", plain[i]);
     }
 }

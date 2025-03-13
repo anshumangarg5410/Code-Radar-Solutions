@@ -23,11 +23,12 @@ int main(){
         for(int  j =i+1; j<n; j++){
             temp[k] = mystr[j];
             if (palindrome(temp, k+1)) {
-                for(int i =0; i<k+1; i++){
-                    printf("%c", temp[i]);
+                for(int o =0; o<k+1; o++){
+                    printf("%c", temp[o]);
                 }
                 return 0;
             }
+            k++;
         }
     }
 }

@@ -17,14 +17,15 @@ int main() {
     scanf("%s", mystr);       
     int n = strlen(mystr);
     for (int i = 0; i < n; i++) {
-        char temp[100];
-        int k = 0;
+        char temp[100]; char palindrome[100][100];
+        int k = 0; int count = 0;
         for (int j = i; j < n; j++) {
             temp[k++] = mystr[j];
             temp[k] = '\0';    
-            if (k >= 2 && palindrome(temp, k)) {  
-                printf("%s\n", temp);             
-                return 0;
+            if (k >= 2 && palindrome(temp, k)) {
+                strcpy(palindrome[count], temp);  
+                printf("%s\n", temp);  
+                count++;           
             }
         }
     }

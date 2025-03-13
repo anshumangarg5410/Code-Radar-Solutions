@@ -23,7 +23,7 @@ int main() {
             temp[k++] = mystr[j];
             temp[k] = '\0';    
             if (k >= 2 && palindrome(temp, k)) {
-                strcpy(palindrome[count], temp);  
+                strcpy(palin[count], temp);  
                 printf("%s\n", temp);  
                 count++;           
             }

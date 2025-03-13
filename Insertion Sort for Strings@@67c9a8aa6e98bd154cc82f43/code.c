@@ -11,7 +11,7 @@ void insertionSort(char arr[][100], int n) {
             // arr[j+1] = arr[j];
             j--;
         }
-        strcpy(arr[j+1], key)
+        strcpy(arr[j+1], key);
         // arr[j+1] = key;
     }
 }

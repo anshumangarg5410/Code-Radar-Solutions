@@ -11,8 +11,8 @@ int binary(char arr[], int a){
 
 int main(){
     char arr[100];
-    scanf("%s", arr)
+    scanf("%s", arr);
     int len = strlen(arr);
     if (binary(arr, len)) printf("No");
-    else printf("No");
+    else printf("Yes");
 }

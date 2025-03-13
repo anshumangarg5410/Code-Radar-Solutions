@@ -48,7 +48,8 @@ int main(){
     strcpy(reversed, mystr); 
     removespace(reversed, len);
     int lenrev = strlen(reversed);
-
+    printf("%s\n", origspaceremoved);
+    printf("%s\n", reversed);
     if (strcmp(origspaceremoved, reversed) == 0) printf("Yes");
     else printf("No");
 

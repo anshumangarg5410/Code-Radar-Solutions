@@ -42,11 +42,14 @@ int main(){
     int len = strlen(mystr);
     mystr = realloc(mystr, len);
     char *reversed = malloc(len * sizeof(char));
-
+    char origspaceremoved[100];
+    strcpy(origspaceremoved, mystr);
+    removespace(origspaceremoved, len);
     strcpy(reversed, mystr); 
     removespace(reversed, len);
     int lenrev = strlen(reversed);
-    if (strcmp(mystr, reversed) == 0) printf("Yes");
+
+    if (strcmp(origspaceremoved, reversed) == 0) printf("Yes");
     else printf("No");
 
 }

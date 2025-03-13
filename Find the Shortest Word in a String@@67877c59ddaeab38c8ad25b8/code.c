@@ -17,13 +17,12 @@ int main(){
         tok = strtok(NULL, " \n");
     }
     int maxxi = strlen(inputstr); char result[100];
-    for(int i =0;i<wordl;i++){
+    for(int i =0;i<word;i++){
         if(strlen(mystr[i]) < maxxi){
             strcpy(mystr[i], result);
             maxxi = strlen(mystr[i]);
         }
     }
     printf("%s", result);
-
 
 }

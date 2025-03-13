@@ -23,7 +23,7 @@ int main(){
     fgets(myar, 100, stdin);
     myar[strcspn(myar, "\n")] = '\0';
     int len = strlen(myar);
-    for(int i =0; i<len; i++){
+    for(int i =len-1; i>=0; i--){
         if (!unique(myar, len, myar[i])) leftshift(myar, len, i);
     }
     printf("%s", myar);

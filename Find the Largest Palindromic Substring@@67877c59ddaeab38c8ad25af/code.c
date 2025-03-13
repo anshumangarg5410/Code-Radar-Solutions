@@ -30,7 +30,15 @@ int main() {
             }
         }
     }
+    int templen = n;
     for(int i =0; i<count; i++){
-        printf("%s\n", plain[i]);
+        for(int j = 0;j<count; j++){
+            int strlenn = strlen(plain[j]);
+            if (strlenn = templen){
+                printf("%s", plain[j]);
+                return 0;
+            }
+        }
+        templen--;
     }
 }

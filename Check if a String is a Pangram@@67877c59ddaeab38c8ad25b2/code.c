@@ -4,7 +4,7 @@
 
 int unique(char target, int a){
     int count = 0;
-    char alphabet[53];
+    char alphabet[54];
     for (int i = 0; i < 26; i++) {
         alphabet[i] = 'a' + i;       
         alphabet[i + 26] = 'A' + i;  

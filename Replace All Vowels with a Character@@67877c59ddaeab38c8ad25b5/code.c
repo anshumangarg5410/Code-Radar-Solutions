@@ -14,7 +14,7 @@ int main(){
     char myar[100];
     scanf("%d", myar);
     int len = strlen(myar);
-    char target;
+    char ele;
     scanf("%c", &ele);
     for(int i =0; i<len; i++){
         if (find(myar, len, myar[i])) myar[i] = ele;

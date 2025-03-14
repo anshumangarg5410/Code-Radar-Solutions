@@ -38,7 +38,7 @@ int main(){
         scanf("%d", &lst[i]);
 
     }
-
+    lst[n] = 0;
     for (int i = 1; i<n;i++){
 
         if (lst[i]>lst[i-1] && lst[i]>lst[i+1]){
